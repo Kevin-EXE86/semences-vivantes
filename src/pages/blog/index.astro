@@ -1,0 +1,74 @@
+---
+// blog/index.astro — Liste dynamique depuis src/content/blog/
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import { getCollection } from 'astro:content';
+
+// Récupère tous les articles non-brouillons, triés du plus récent au plus ancien
+const articles = (await getCollection('blog', ({ data }) => !data.brouillon))
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+---
+
+<BaseLayout
+  titre="Blog"
+  description="Articles, guides et conseils sur les semences anciennes, le jardinage bio et la biodiversité potagère."
+>
+
+  <div class="blog-entete">
+    <div class="container">
+      <h1>Blog</h1>
+      <p>
+        {articles.length} article{articles.length > 1 ? 's' : ''} sur les semences vivantes, le jardinage bio et la biodiversité potagère.
+      </p>
+    </div>
+  </div>
+
+  <div class="container blog-contenu">
+    {articles.length === 0 ? (
+      <p class="vide">Aucun article pour le moment. Revenez bientôt !</p>
+    ) : (
+      <div class="articles__grille">
+        {articles.map(article => (
+          <ArticleCard
+            titre={article.data.titre}
+            extrait={article.data.description}
+            slug={article.slug}
+            date={article.data.date.toISOString()}
+            categorie={article.data.categorie}
+            tempsLecture={article.data.tempsLecture}
+          />
+        ))}
+      </div>
+    )}
+  </div>
+
+</BaseLayout>
+
+<style>
+.blog-entete {
+  background: linear-gradient(135deg, var(--creme), var(--vert-pale));
+  padding: 3rem 0 2.5rem;
+  border-bottom: 1px solid var(--gris-clair);
+  margin-bottom: 3rem;
+}
+.blog-entete h1 { font-size: 2.2rem; margin-bottom: 0.5rem; }
+.blog-entete p  { color: var(--gris-chaud); font-size: 1rem; margin: 0; }
+
+.blog-contenu { padding-bottom: 4rem; }
+
+.articles__grille {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.vide {
+  text-align: center;
+  color: var(--gris-chaud);
+  font-style: italic;
+  padding: 3rem 0;
+}
+
+@media (max-width: 900px) { .articles__grille { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .articles__grille { grid-template-columns: 1fr; } }
+</style>

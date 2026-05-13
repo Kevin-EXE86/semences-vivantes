@@ -1,0 +1,135 @@
+/* ============================================
+   SEMENCES VIVANTES — Styles Globaux
+   Esthétique : organique, éditorial, terreux
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+
+/* ── Variables ── */
+:root {
+  --vert-profond:   #2d4a2d;
+  --vert-mousse:    #4a6741;
+  --vert-tendre:    #7a9e6e;
+  --vert-pale:      #c8dbb8;
+  --terre:          #8b5e3c;
+  --sable:          #f5efe6;
+  --creme:          #faf7f2;
+  --blanc:          #ffffff;
+  --gris-chaud:     #6b6560;
+  --gris-clair:     #e8e2da;
+  --texte:          #2a2420;
+
+  --font-titre:     'Playfair Display', Georgia, serif;
+  --font-corps:     'Lora', Georgia, serif;
+  --font-ui:        'DM Sans', sans-serif;
+
+  --radius:         4px;
+  --radius-lg:      12px;
+  --ombre:          0 4px 24px rgba(45, 74, 45, 0.10);
+  --ombre-forte:    0 8px 40px rgba(45, 74, 45, 0.18);
+
+  --max-width:      1100px;
+  --col-article:    720px;
+}
+
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  scroll-behavior: smooth;
+  font-size: 18px;
+}
+
+body {
+  font-family: var(--font-corps);
+  background-color: var(--creme);
+  color: var(--texte);
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+a  { color: var(--vert-profond); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+h1, h2, h3, h4 {
+  font-family: var(--font-titre);
+  line-height: 1.2;
+  color: var(--vert-profond);
+}
+
+p { margin-bottom: 1.2rem; }
+
+/* ── Utilitaires ── */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-weight: 500;
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+  padding: 0.75rem 1.75rem;
+  border-radius: var(--radius);
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+}
+
+.btn-primaire {
+  background: var(--vert-profond);
+  color: var(--blanc);
+}
+.btn-primaire:hover {
+  background: var(--vert-mousse);
+  text-decoration: none;
+  transform: translateY(-1px);
+  box-shadow: var(--ombre);
+}
+
+.btn-secondaire {
+  background: transparent;
+  color: var(--vert-profond);
+  border: 1.5px solid var(--vert-profond);
+}
+.btn-secondaire:hover {
+  background: var(--vert-pale);
+  text-decoration: none;
+}
+
+.tag {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  background: var(--vert-pale);
+  color: var(--vert-profond);
+}
+
+/* ── Séparateur décoratif ── */
+.separateur {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 3rem 0;
+  color: var(--vert-tendre);
+  font-family: var(--font-titre);
+  font-style: italic;
+  font-size: 1.1rem;
+}
+.separateur::before,
+.separateur::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--gris-clair);
+}

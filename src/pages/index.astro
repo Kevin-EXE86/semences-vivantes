@@ -1,0 +1,381 @@
+---
+// index.astro — Page d'accueil
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import { getCollection } from 'astro:content';
+
+// Les 3 derniers articles publiés
+const tousArticles = await getCollection('blog', ({ data }) => !data.brouillon);
+const articlesUne = tousArticles
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0, 3)
+  .map(a => ({
+    titre: a.data.titre,
+    extrait: a.data.description,
+    slug: a.slug,
+    date: a.data.date.toISOString(),
+    categorie: a.data.categorie,
+    tempsLecture: a.data.tempsLecture,
+  }));
+
+const categories = [
+  { nom: "Semences",    emoji: "🌾", desc: "Choisir, conserver, multiplier" },
+  { nom: "Potager bio", emoji: "🥕", desc: "Culture sans pesticides" },
+  { nom: "Calendrier",  emoji: "📅", desc: "Quoi semer, quand et comment" },
+  { nom: "Biodiversité",emoji: "🦋", desc: "Préserver les variétés anciennes" },
+];
+---
+
+<BaseLayout
+  titre="Semences Vivantes"
+  description="Blog dédié aux semences anciennes, à la biodiversité potagère et au jardinage biologique. Guides pratiques, conseils de semis et ressources sélectionnées."
+>
+
+  <!-- ══════════════════════════════
+       HERO
+  ══════════════════════════════ -->
+  <section class="hero">
+    <div class="hero__fond-motif" aria-hidden="true"></div>
+    <div class="container hero__contenu">
+      <span class="hero__etiquette">🌿 Jardinage bio & semences libres</span>
+      <h1 class="hero__titre">
+        Cultivons la<br/>
+        <em>biodiversité</em><br/>
+        de nos jardins
+      </h1>
+      <p class="hero__accroche">
+        Guides pratiques, conseils de saison et ressources pour jardiner
+        avec des semences anciennes, reproductibles et biologiques.
+      </p>
+      <div class="hero__actions">
+        <a href="/blog" class="btn btn-primaire">Découvrir le blog</a>
+        <a href="/guides" class="btn btn-secondaire">Guides pratiques</a>
+      </div>
+    </div>
+    <div class="hero__deco" aria-hidden="true">
+      <span>🌱</span><span>🌿</span><span>🌾</span>
+      <span>🍅</span><span>🥦</span><span>🌻</span>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       CATÉGORIES
+  ══════════════════════════════ -->
+  <section class="section-categories">
+    <div class="container">
+      <div class="categories__grille">
+        {categories.map(cat => (
+          <a href={`/blog?categorie=${cat.nom.toLowerCase()}`} class="categorie-card">
+            <span class="categorie-card__emoji">{cat.emoji}</span>
+            <span class="categorie-card__nom">{cat.nom}</span>
+            <span class="categorie-card__desc">{cat.desc}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       ARTICLES À LA UNE
+  ══════════════════════════════ -->
+  <section class="section-articles">
+    <div class="container">
+      <div class="section-entete">
+        <h2>Derniers articles</h2>
+        <a href="/blog" class="voir-tout">Voir tout le blog →</a>
+      </div>
+      <div class="articles__grille">
+        {articlesUne.map(article => (
+          <ArticleCard {...article} />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       BANNIÈRE AFFILIATION
+  ══════════════════════════════ -->
+  <section class="section-affiliation">
+    <div class="container">
+      <div class="affiliation-bloc">
+        <div class="affiliation-bloc__texte">
+          <h2>Nos ressources sélectionnées</h2>
+          <p>
+            Outils de jardin, livres sur les semences paysannes, accessoires bio…
+            Une sélection soigneuse de produits que nous recommandons vraiment,
+            avec des liens affiliés qui soutiennent ce blog sans surcoût pour vous.
+          </p>
+          <a href="/ressources" class="btn btn-primaire">Voir les ressources</a>
+        </div>
+        <div class="affiliation-bloc__icones" aria-hidden="true">
+          🪴 🌿 🫙 📚 🔧
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       NEWSLETTER
+  ══════════════════════════════ -->
+  <section class="section-newsletter">
+    <div class="container">
+      <div class="newsletter-bloc">
+        <h2>Restez dans la boucle des semailles</h2>
+        <p>Chaque mois, les conseils de saison, les bons plans et nos nouveaux guides.</p>
+        <form class="newsletter-form" onsubmit="return false;">
+          <input
+            type="email"
+            placeholder="votre@email.fr"
+            class="newsletter-form__input"
+            aria-label="Votre adresse email"
+          />
+          <button type="submit" class="btn btn-primaire">S'inscrire</button>
+        </form>
+        <p class="newsletter-note">Pas de spam. Désinscription en un clic.</p>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<style>
+/* ── Hero ── */
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 5rem 0 4rem;
+  background: linear-gradient(135deg, var(--creme) 0%, var(--vert-pale) 100%);
+}
+
+.hero__fond-motif {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at 70% 50%, rgba(122,158,110,0.15) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.hero__contenu {
+  position: relative;
+  max-width: 640px;
+}
+
+.hero__etiquette {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--vert-mousse);
+  margin-bottom: 1.25rem;
+  background: rgba(255,255,255,0.7);
+  padding: 0.3rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--vert-pale);
+}
+
+.hero__titre {
+  font-size: clamp(2.4rem, 6vw, 3.8rem);
+  line-height: 1.1;
+  color: var(--vert-profond);
+  margin-bottom: 1.25rem;
+}
+.hero__titre em {
+  font-style: italic;
+  color: var(--vert-mousse);
+}
+
+.hero__accroche {
+  font-size: 1.05rem;
+  color: var(--gris-chaud);
+  max-width: 500px;
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+
+.hero__actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero__deco {
+  position: absolute;
+  right: -1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 2.5rem;
+  opacity: 0.18;
+  user-select: none;
+}
+
+/* ── Catégories ── */
+.section-categories {
+  padding: 3rem 0;
+}
+
+.categories__grille {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.categorie-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.4rem;
+  padding: 1.5rem 1rem;
+  background: var(--blanc);
+  border: 1px solid var(--gris-clair);
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.categorie-card:hover {
+  border-color: var(--vert-tendre);
+  box-shadow: var(--ombre);
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+.categorie-card__emoji { font-size: 2rem; }
+.categorie-card__nom {
+  font-family: var(--font-titre);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--vert-profond);
+}
+.categorie-card__desc {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  color: var(--gris-chaud);
+}
+
+/* ── Articles ── */
+.section-articles {
+  padding: 3rem 0 4rem;
+}
+
+.section-entete {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.section-entete h2 {
+  font-size: 1.6rem;
+}
+.voir-tout {
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--vert-mousse);
+}
+
+.articles__grille {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+/* ── Affiliation ── */
+.section-affiliation {
+  padding: 2rem 0;
+}
+
+.affiliation-bloc {
+  background: var(--vert-profond);
+  border-radius: var(--radius-lg);
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2rem;
+  align-items: center;
+}
+
+.affiliation-bloc__texte h2 {
+  color: var(--blanc);
+  margin-bottom: 0.75rem;
+}
+.affiliation-bloc__texte p {
+  color: var(--vert-pale);
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  max-width: 520px;
+}
+.affiliation-bloc__texte .btn-primaire {
+  background: var(--vert-tendre);
+  color: var(--vert-profond);
+  font-weight: 700;
+}
+.affiliation-bloc__texte .btn-primaire:hover {
+  background: var(--vert-pale);
+}
+
+.affiliation-bloc__icones {
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  opacity: 0.4;
+}
+
+/* ── Newsletter ── */
+.section-newsletter {
+  padding: 4rem 0;
+}
+
+.newsletter-bloc {
+  text-align: center;
+  max-width: 520px;
+  margin: 0 auto;
+}
+.newsletter-bloc h2 { margin-bottom: 0.5rem; }
+.newsletter-bloc p  { color: var(--gris-chaud); font-size: 0.95rem; margin-bottom: 1.5rem; }
+
+.newsletter-form {
+  display: flex;
+  gap: 0.75rem;
+  max-width: 420px;
+  margin: 0 auto 0.75rem;
+}
+.newsletter-form__input {
+  flex: 1;
+  font-family: var(--font-ui);
+  font-size: 0.9rem;
+  padding: 0.75rem 1rem;
+  border: 1.5px solid var(--gris-clair);
+  border-radius: var(--radius);
+  background: var(--blanc);
+  color: var(--texte);
+  outline: none;
+  transition: border-color 0.15s;
+}
+.newsletter-form__input:focus {
+  border-color: var(--vert-tendre);
+}
+.newsletter-note {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  color: var(--gris-chaud);
+  font-style: italic;
+  margin: 0;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .categories__grille  { grid-template-columns: repeat(2, 1fr); }
+  .articles__grille    { grid-template-columns: repeat(2, 1fr); }
+  .affiliation-bloc    { grid-template-columns: 1fr; }
+  .affiliation-bloc__icones { display: none; }
+}
+@media (max-width: 600px) {
+  .hero { padding: 3rem 0; }
+  .categories__grille { grid-template-columns: repeat(2, 1fr); }
+  .articles__grille   { grid-template-columns: 1fr; }
+  .newsletter-form    { flex-direction: column; }
+  .hero__deco         { display: none; }
+}
+</style>

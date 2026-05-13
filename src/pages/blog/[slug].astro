@@ -1,0 +1,326 @@
+---
+// blog/[slug].astro — Page individuelle d'un article
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection, getEntry } from 'astro:content';
+
+// Génère une page statique pour chaque article
+export async function getStaticPaths() {
+  const articles = await getCollection('blog', ({ data }) => !data.brouillon);
+  return articles.map(article => ({
+    params: { slug: article.slug },
+    props: { article },
+  }));
+}
+
+const { article } = Astro.props;
+const { Content } = await article.render();
+
+const dateFormatee = article.data.date.toLocaleDateString('fr-FR', {
+  day: 'numeric', month: 'long', year: 'numeric'
+});
+
+// Articles connexes (même catégorie, excluant l'article courant)
+const tousArticles = await getCollection('blog', ({ data }) => !data.brouillon);
+const connexes = tousArticles
+  .filter(a => a.slug !== article.slug && a.data.categorie === article.data.categorie)
+  .slice(0, 2);
+---
+
+<BaseLayout
+  titre={article.data.titre}
+  description={article.data.description}
+  type="article"
+>
+
+  <!-- En-tête de l'article -->
+  <div class="article-entete">
+    <div class="container article-entete__inner">
+      <div class="article-meta">
+        <span class="tag">{article.data.categorie}</span>
+        <span class="article-meta__sep">·</span>
+        <span class="article-meta__temps">⏱ {article.data.tempsLecture} min de lecture</span>
+      </div>
+      <h1 class="article-titre">{article.data.titre}</h1>
+      <p class="article-description">{article.data.description}</p>
+      <time class="article-date" datetime={article.data.date.toISOString()}>
+        Publié le {dateFormatee}
+      </time>
+    </div>
+  </div>
+
+  <!-- Corps de l'article -->
+  <div class="container article-layout">
+
+    <article class="article-corps prose">
+      <Content />
+    </article>
+
+    <!-- Sidebar -->
+    <aside class="article-sidebar">
+
+      <!-- Navigation retour -->
+      <a href="/blog" class="sidebar-retour">← Retour au blog</a>
+
+      <!-- Partage -->
+      <div class="sidebar-bloc">
+        <h3>Partager</h3>
+        <div class="sidebar-partage">
+          <a
+            href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(article.data.titre)}&url=${encodeURIComponent(Astro.url.href)}`}
+            target="_blank" rel="noopener noreferrer"
+            class="btn-partage"
+          >
+            𝕏 Twitter
+          </a>
+          <a
+            href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(Astro.url.href)}`}
+            target="_blank" rel="noopener noreferrer"
+            class="btn-partage"
+          >
+            Facebook
+          </a>
+        </div>
+      </div>
+
+      <!-- Articles connexes -->
+      {connexes.length > 0 && (
+        <div class="sidebar-bloc">
+          <h3>À lire aussi</h3>
+          <ul class="sidebar-connexes">
+            {connexes.map(a => (
+              <li>
+                <span class="tag" style="font-size:0.65rem">{a.data.categorie}</span>
+                <a href={`/blog/${a.slug}`}>{a.data.titre}</a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      <!-- Affiliation légère -->
+      <div class="sidebar-bloc sidebar-affiliation">
+        <p>🌱 Vous aimez ce contenu ?</p>
+        <p>Soutenez-nous en passant par nos <a href="/ressources">liens affiliés</a> pour vos achats de jardinage.</p>
+      </div>
+
+    </aside>
+  </div>
+
+</BaseLayout>
+
+<style>
+/* ── En-tête ── */
+.article-entete {
+  background: linear-gradient(135deg, var(--creme), var(--vert-pale));
+  border-bottom: 1px solid var(--gris-clair);
+  padding: 3.5rem 0 3rem;
+  margin-bottom: 3rem;
+}
+.article-entete__inner { max-width: var(--col-article); }
+
+.article-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+.article-meta__sep, .article-meta__temps {
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  color: var(--gris-chaud);
+}
+
+.article-titre {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  line-height: 1.15;
+  margin-bottom: 1rem;
+  color: var(--vert-profond);
+}
+
+.article-description {
+  font-size: 1.05rem;
+  color: var(--gris-chaud);
+  line-height: 1.65;
+  margin-bottom: 1.25rem;
+  font-style: italic;
+}
+
+.article-date {
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  color: var(--gris-chaud);
+}
+
+/* ── Layout 2 colonnes ── */
+.article-layout {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 3rem;
+  align-items: start;
+  padding-bottom: 5rem;
+}
+
+/* ── Corps / Prose ── */
+.prose {
+  max-width: var(--col-article);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.prose h2 {
+  font-size: 1.5rem;
+  margin: 2.5rem 0 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--vert-pale);
+}
+
+.prose h3 {
+  font-size: 1.15rem;
+  margin: 2rem 0 0.75rem;
+  color: var(--vert-mousse);
+}
+
+.prose p { margin-bottom: 1.3rem; }
+
+.prose ul, .prose ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.3rem;
+}
+.prose li { margin-bottom: 0.4rem; }
+
+.prose strong { color: var(--vert-profond); font-weight: 600; }
+
+.prose blockquote {
+  border-left: 3px solid var(--vert-tendre);
+  padding: 0.75rem 1.25rem;
+  margin: 1.5rem 0;
+  background: var(--vert-pale);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  font-style: italic;
+  color: var(--vert-profond);
+}
+.prose blockquote p { margin: 0; }
+
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-family: var(--font-ui);
+  font-size: 0.88rem;
+}
+.prose th {
+  background: var(--vert-profond);
+  color: var(--blanc);
+  padding: 0.6rem 1rem;
+  text-align: left;
+}
+.prose td {
+  padding: 0.55rem 1rem;
+  border-bottom: 1px solid var(--gris-clair);
+}
+.prose tr:nth-child(even) td { background: var(--sable); }
+
+.prose code {
+  font-family: monospace;
+  background: var(--gris-clair);
+  padding: 0.15rem 0.4rem;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+/* ── Sidebar ── */
+.article-sidebar {
+  position: sticky;
+  top: 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sidebar-retour {
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--vert-mousse);
+  text-decoration: none;
+}
+.sidebar-retour:hover { color: var(--vert-profond); }
+
+.sidebar-bloc {
+  background: var(--blanc);
+  border: 1px solid var(--gris-clair);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+}
+.sidebar-bloc h3 {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gris-chaud);
+  margin-bottom: 0.9rem;
+}
+
+.sidebar-partage {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.btn-partage {
+  display: block;
+  text-align: center;
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.5rem;
+  border-radius: var(--radius);
+  background: var(--gris-clair);
+  color: var(--texte);
+  text-decoration: none;
+  transition: all 0.15s;
+}
+.btn-partage:hover {
+  background: var(--vert-pale);
+  color: var(--vert-profond);
+  text-decoration: none;
+}
+
+.sidebar-connexes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+.sidebar-connexes li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.sidebar-connexes a {
+  font-family: var(--font-corps);
+  font-size: 0.88rem;
+  color: var(--vert-profond);
+  line-height: 1.35;
+}
+.sidebar-connexes a:hover { color: var(--vert-mousse); }
+
+.sidebar-affiliation {
+  background: var(--sable);
+  border-color: var(--gris-clair);
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  color: var(--gris-chaud);
+  line-height: 1.5;
+}
+.sidebar-affiliation p { margin: 0 0 0.4rem; }
+.sidebar-affiliation a { color: var(--vert-mousse); font-weight: 600; }
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .article-layout {
+    grid-template-columns: 1fr;
+  }
+  .article-sidebar { position: static; }
+}
+</style>

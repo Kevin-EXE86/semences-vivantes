@@ -1,0 +1,117 @@
+---
+// ArticleCard.astro
+interface Props {
+  titre: string;
+  extrait: string;
+  slug: string;
+  date: string;
+  categorie?: string;
+  tempsLecture?: number;
+}
+
+const { titre, extrait, slug, date, categorie = 'Jardinage', tempsLecture = 5 } = Astro.props;
+
+const dateFormatee = new Date(date).toLocaleDateString('fr-FR', {
+  day: 'numeric', month: 'long', year: 'numeric'
+});
+---
+
+<article class="carte">
+  <div class="carte__meta">
+    <span class="tag">{categorie}</span>
+    <span class="carte__temps">⏱ {tempsLecture} min</span>
+  </div>
+
+  <h2 class="carte__titre">
+    <a href={`/blog/${slug}`}>{titre}</a>
+  </h2>
+
+  <p class="carte__extrait">{extrait}</p>
+
+  <div class="carte__pied">
+    <time class="carte__date" datetime={date}>{dateFormatee}</time>
+    <a href={`/blog/${slug}`} class="carte__lire">
+      Lire l'article →
+    </a>
+  </div>
+</article>
+
+<style>
+.carte {
+  background: var(--blanc);
+  border: 1px solid var(--gris-clair);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.carte:hover {
+  box-shadow: var(--ombre);
+  transform: translateY(-2px);
+}
+
+.carte__meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.carte__temps {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  color: var(--gris-chaud);
+}
+
+.carte__titre {
+  font-size: 1.15rem;
+  line-height: 1.35;
+}
+.carte__titre a {
+  color: var(--vert-profond);
+  text-decoration: none;
+}
+.carte__titre a:hover {
+  color: var(--vert-mousse);
+  text-decoration: underline;
+}
+
+.carte__extrait {
+  font-size: 0.92rem;
+  color: var(--gris-chaud);
+  line-height: 1.6;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.carte__pied {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--gris-clair);
+}
+
+.carte__date {
+  font-family: var(--font-ui);
+  font-size: 0.78rem;
+  color: var(--gris-chaud);
+}
+
+.carte__lire {
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--vert-mousse);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+.carte__lire:hover {
+  color: var(--vert-profond);
+  text-decoration: underline;
+}
+</style>

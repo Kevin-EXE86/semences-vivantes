@@ -1,0 +1,220 @@
+---
+// ressources.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const ressources = [
+  {
+    categorie: "🌱 Semences bio",
+    items: [
+      {
+        nom: "Agrieuro — Matériel de jardin bio",
+        desc: "Le site référence pour l'outillage maraîcher et les accessoires de jardinage biologique. Large choix, prix compétitifs.",
+        lien: "https://www.agrieuro.fr",
+        badge: "Affilié — 15% de commission",
+        affilie: true,
+      },
+      {
+        nom: "La Semence Bio",
+        desc: "Semences 100% bio et reproductibles, certifiées Ecocert. Idéales pour un potager autonome et durable.",
+        lien: "https://www.lasemencebio.com",
+        badge: "Recommandé",
+        affilie: false,
+      },
+    ],
+  },
+  {
+    categorie: "🔧 Outils & accessoires",
+    items: [
+      {
+        nom: "Amazon — Jardinage bio",
+        desc: "Notre sélection d'outils, mini-serres, pots biodégradables et accessoires de semis disponibles sur Amazon.",
+        lien: "https://www.amazon.fr",
+        badge: "Affilié — jusqu'à 10%",
+        affilie: true,
+      },
+      {
+        nom: "ManoMano — Jardinage",
+        desc: "Grande sélection de matériel de jardinage, souvent moins cher qu'en jardinerie. Livraison rapide.",
+        lien: "https://www.manomano.fr",
+        badge: "Affilié — jusqu'à 7%",
+        affilie: true,
+      },
+    ],
+  },
+  {
+    categorie: "📚 Livres conseillés",
+    items: [
+      {
+        nom: "\"Semences, le trésor de la vie\"",
+        desc: "Le livre de référence sur la conservation et la multiplication des semences anciennes. Indispensable.",
+        lien: "https://www.amazon.fr",
+        badge: "Affilié Amazon",
+        affilie: true,
+      },
+      {
+        nom: "\"Le potager en permaculture\"",
+        desc: "Comprendre les principes de permaculture appliqués au potager pour créer un jardin résilient et productif.",
+        lien: "https://www.amazon.fr",
+        badge: "Affilié Amazon",
+        affilie: true,
+      },
+    ],
+  },
+];
+---
+
+<BaseLayout
+  titre="Ressources & recommandations"
+  description="Sélection de semenciers bio, outils de jardinage et livres recommandés par Semences Vivantes."
+>
+
+  <div class="ress-entete">
+    <div class="container">
+      <h1>Ressources & recommandations</h1>
+      <p>
+        Une sélection soigneuse de sites, outils et livres que nous utilisons et recommandons vraiment.
+        Certains liens sont affiliés — cela nous aide à financer le blog sans coût supplémentaire pour vous.
+      </p>
+    </div>
+  </div>
+
+  <div class="container ress-contenu">
+
+    <div class="affiliation-info">
+      <span>ℹ️</span>
+      <p>
+        Les liens marqués <strong>"Affilié"</strong> génèrent une petite commission sur vos achats,
+        ce qui nous permet de maintenir ce blog gratuitement et sans publicité intrusive.
+        Merci pour votre soutien !
+      </p>
+    </div>
+
+    {ressources.map(section => (
+      <div class="ress-section">
+        <h2 class="ress-section__titre">{section.categorie}</h2>
+        <div class="ress-grille">
+          {section.items.map(item => (
+            <a href={item.lien} class="ress-card" target="_blank" rel="noopener noreferrer sponsored">
+              <div class="ress-card__entete">
+                <h3 class="ress-card__nom">{item.nom}</h3>
+                <span class={`ress-card__badge ${item.affilie ? 'ress-card__badge--affilie' : ''}`}>
+                  {item.badge}
+                </span>
+              </div>
+              <p class="ress-card__desc">{item.desc}</p>
+              <span class="ress-card__lien">Visiter le site →</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    ))}
+
+  </div>
+</BaseLayout>
+
+<style>
+.ress-entete {
+  background: linear-gradient(135deg, var(--creme), var(--vert-pale));
+  padding: 3rem 0 2.5rem;
+  border-bottom: 1px solid var(--gris-clair);
+  margin-bottom: 3rem;
+}
+.ress-entete h1 { font-size: 2.2rem; margin-bottom: 0.5rem; }
+.ress-entete p  { color: var(--gris-chaud); max-width: 600px; margin: 0; }
+
+.ress-contenu { padding-bottom: 4rem; }
+
+.affiliation-info {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 3rem;
+  font-family: var(--font-ui);
+  font-size: 0.88rem;
+  color: #92400e;
+}
+.affiliation-info span { font-size: 1.2rem; flex-shrink: 0; }
+.affiliation-info p { margin: 0; line-height: 1.5; }
+
+.ress-section { margin-bottom: 3rem; }
+.ress-section__titre {
+  font-size: 1.3rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--vert-pale);
+}
+
+.ress-grille {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.ress-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background: var(--blanc);
+  border: 1px solid var(--gris-clair);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.ress-card:hover {
+  box-shadow: var(--ombre);
+  border-color: var(--vert-tendre);
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+.ress-card__entete {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.ress-card__nom {
+  font-size: 1rem;
+  color: var(--vert-profond);
+  line-height: 1.3;
+}
+
+.ress-card__badge {
+  font-family: var(--font-ui);
+  font-size: 0.68rem;
+  font-weight: 600;
+  white-space: nowrap;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: var(--gris-clair);
+  color: var(--gris-chaud);
+  flex-shrink: 0;
+}
+.ress-card__badge--affilie {
+  background: var(--vert-pale);
+  color: var(--vert-profond);
+}
+
+.ress-card__desc {
+  font-size: 0.88rem;
+  color: var(--gris-chaud);
+  line-height: 1.55;
+  margin: 0;
+  flex: 1;
+}
+
+.ress-card__lien {
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--vert-mousse);
+  margin-top: 0.25rem;
+}
+
+@media (max-width: 700px) { .ress-grille { grid-template-columns: 1fr; } }
+</style>

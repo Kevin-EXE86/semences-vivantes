@@ -1,0 +1,139 @@
+---
+// Footer.astro
+const annee = new Date().getFullYear();
+---
+
+<footer class="footer">
+  <div class="container footer__inner">
+
+    <div class="footer__brand">
+      <a href="/" class="footer__logo">🌱 Semences Vivantes</a>
+      <p class="footer__desc">
+        Un blog indépendant dédié à la biodiversité potagère,
+        aux semences anciennes et au jardinage biologique.
+      </p>
+    </div>
+
+    <nav class="footer__nav" aria-label="Liens du pied de page">
+      <div class="footer__col">
+        <h4>Explorer</h4>
+        <ul>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/guides">Guides pratiques</a></li>
+          <li><a href="/ressources">Ressources & affiliés</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>À propos</h4>
+        <ul>
+          <li><a href="/a-propos">Qui sommes-nous ?</a></li>
+          <li><a href="/mentions-legales">Mentions légales</a></li>
+          <li><a href="/politique-confidentialite">Confidentialité</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  </div>
+
+  <div class="footer__bas">
+    <div class="container">
+      <p>
+        © {annee} Semences Vivantes — Contenu sous licence CC BY-NC 4.0.
+        <span class="footer__affiliation">
+          Ce site contient des liens d'affiliation. En achetant via nos liens, vous nous soutenez sans surcoût.
+        </span>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<style>
+.footer {
+  background: var(--vert-profond);
+  color: var(--vert-pale);
+  margin-top: 5rem;
+}
+
+.footer__inner {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 3rem;
+  padding: 3.5rem 1.5rem;
+}
+
+.footer__logo {
+  font-family: var(--font-titre);
+  font-size: 1.2rem;
+  color: var(--blanc);
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 0.75rem;
+}
+
+.footer__desc {
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--vert-pale);
+  max-width: 320px;
+  margin-bottom: 0;
+}
+
+.footer__nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.footer__col h4 {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--vert-tendre);
+  margin-bottom: 1rem;
+}
+
+.footer__col ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer__col a {
+  font-family: var(--font-ui);
+  font-size: 0.88rem;
+  color: var(--vert-pale);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.footer__col a:hover { color: var(--blanc); }
+
+.footer__bas {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding: 1.25rem 0;
+}
+
+.footer__bas p {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  color: var(--vert-tendre);
+  margin: 0;
+}
+
+.footer__affiliation {
+  display: block;
+  margin-top: 0.3rem;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+@media (max-width: 700px) {
+  .footer__inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+</style>

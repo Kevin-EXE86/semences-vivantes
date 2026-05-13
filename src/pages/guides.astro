@@ -1,0 +1,141 @@
+---
+// guides.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const guides = [
+  {
+    emoji: "🌾",
+    titre: "Guide des semences",
+    desc: "Choisir, conserver, multiplier et échanger ses semences biologiques et reproductibles.",
+    lien: "/blog?categorie=semences",
+    articles: 8,
+  },
+  {
+    emoji: "📅",
+    titre: "Calendrier des semis",
+    desc: "Mois par mois, tout ce qu'il faut semer, planter et récolter dans votre potager.",
+    lien: "/blog?categorie=calendrier",
+    articles: 12,
+  },
+  {
+    emoji: "🪱",
+    titre: "Santé du sol",
+    desc: "Compost, engrais verts, vers de terre : comprendre et nourrir la vie du sol.",
+    lien: "/blog?categorie=sol",
+    articles: 5,
+  },
+  {
+    emoji: "🦋",
+    titre: "Biodiversité au jardin",
+    desc: "Favoriser les auxiliaires, planter des fleurs mellifères et créer un jardin vivant.",
+    lien: "/blog?categorie=biodiversite",
+    articles: 6,
+  },
+  {
+    emoji: "🫙",
+    titre: "Conservation & bocaux",
+    desc: "Lacto-fermentation, séchage, congélation : valoriser les récoltes du potager.",
+    lien: "/blog?categorie=conservation",
+    articles: 4,
+  },
+  {
+    emoji: "🌿",
+    titre: "Plantes aromatiques",
+    desc: "Cultiver, récolter et utiliser les herbes aromatiques et médicinales du jardin.",
+    lien: "/blog?categorie=aromatiques",
+    articles: 7,
+  },
+];
+---
+
+<BaseLayout
+  titre="Guides pratiques"
+  description="Guides complets sur les semences bio, le calendrier des semis, la santé du sol et la biodiversité au potager."
+>
+
+  <div class="guides-entete">
+    <div class="container">
+      <h1>Guides pratiques</h1>
+      <p>Des ressources complètes pour jardiner avec les semences vivantes.</p>
+    </div>
+  </div>
+
+  <div class="container guides-contenu">
+    <div class="guides__grille">
+      {guides.map(guide => (
+        <a href={guide.lien} class="guide-card">
+          <span class="guide-card__emoji">{guide.emoji}</span>
+          <div class="guide-card__corps">
+            <h2 class="guide-card__titre">{guide.titre}</h2>
+            <p class="guide-card__desc">{guide.desc}</p>
+            <span class="guide-card__nb">{guide.articles} articles</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+
+</BaseLayout>
+
+<style>
+.guides-entete {
+  background: linear-gradient(135deg, var(--creme), var(--vert-pale));
+  padding: 3rem 0 2.5rem;
+  border-bottom: 1px solid var(--gris-clair);
+  margin-bottom: 3rem;
+}
+.guides-entete h1 { font-size: 2.2rem; margin-bottom: 0.5rem; }
+.guides-entete p  { color: var(--gris-chaud); margin: 0; }
+
+.guides-contenu { padding-bottom: 4rem; }
+
+.guides__grille {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.guide-card {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  background: var(--blanc);
+  border: 1px solid var(--gris-clair);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.guide-card:hover {
+  box-shadow: var(--ombre);
+  transform: translateY(-2px);
+  border-color: var(--vert-tendre);
+  text-decoration: none;
+}
+
+.guide-card__emoji { font-size: 2rem; flex-shrink: 0; margin-top: 0.1rem; }
+
+.guide-card__titre {
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+  color: var(--vert-profond);
+}
+.guide-card__desc {
+  font-size: 0.85rem;
+  color: var(--gris-chaud);
+  line-height: 1.55;
+  margin-bottom: 0.75rem;
+}
+.guide-card__nb {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--vert-mousse);
+  background: var(--vert-pale);
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+}
+
+@media (max-width: 900px) { .guides__grille { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .guides__grille { grid-template-columns: 1fr; } }
+</style>

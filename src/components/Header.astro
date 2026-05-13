@@ -1,0 +1,185 @@
+---
+// Header.astro
+const nav = [
+  { label: 'Accueil',    href: '/'           },
+  { label: 'Blog',       href: '/blog'        },
+  { label: 'Guides',     href: '/guides'      },
+  { label: 'Ressources', href: '/ressources'  },
+];
+
+const currentPath = Astro.url.pathname;
+---
+
+<header class="header">
+  <div class="container header__inner">
+
+    <!-- Logo -->
+    <a href="/" class="logo" aria-label="Semences Vivantes — Accueil">
+      <span class="logo__icone">🌱</span>
+      <span class="logo__texte">
+        <span class="logo__nom">Semences Vivantes</span>
+        <span class="logo__baseline">Biodiversité & jardinage bio</span>
+      </span>
+    </a>
+
+    <!-- Navigation desktop -->
+    <nav class="nav" aria-label="Navigation principale">
+      <ul class="nav__liste">
+        {nav.map(item => (
+          <li>
+            <a
+              href={item.href}
+              class={`nav__lien ${currentPath === item.href || (item.href !== '/' && currentPath.startsWith(item.href)) ? 'nav__lien--actif' : ''}`}
+            >
+              {item.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+
+    <!-- Bouton mobile -->
+    <button class="menu-toggle" aria-label="Ouvrir le menu" id="menuToggle">
+      <span></span><span></span><span></span>
+    </button>
+
+  </div>
+
+  <!-- Nav mobile -->
+  <nav class="nav-mobile" id="navMobile" aria-hidden="true">
+    <ul>
+      {nav.map(item => (
+        <li><a href={item.href} class="nav-mobile__lien">{item.label}</a></li>
+      ))}
+    </ul>
+  </nav>
+</header>
+
+<style>
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(250, 247, 242, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--gris-clair);
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  gap: 2rem;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+.logo__icone { font-size: 1.6rem; }
+.logo__texte {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+.logo__nom {
+  font-family: var(--font-titre);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--vert-profond);
+}
+.logo__baseline {
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--gris-chaud);
+}
+
+/* Nav desktop */
+.nav__liste {
+  display: flex;
+  list-style: none;
+  gap: 0.25rem;
+}
+.nav__lien {
+  font-family: var(--font-ui);
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--gris-chaud);
+  padding: 0.4rem 0.85rem;
+  border-radius: var(--radius);
+  transition: all 0.15s ease;
+  text-decoration: none;
+}
+.nav__lien:hover {
+  color: var(--vert-profond);
+  background: var(--vert-pale);
+  text-decoration: none;
+}
+.nav__lien--actif {
+  color: var(--vert-profond);
+  background: var(--vert-pale);
+  font-weight: 600;
+}
+
+/* Bouton hamburger */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 26px;
+  height: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+.menu-toggle span {
+  display: block;
+  height: 2px;
+  background: var(--vert-profond);
+  border-radius: 2px;
+  transition: all 0.2s;
+}
+
+/* Nav mobile */
+.nav-mobile {
+  display: none;
+  background: var(--creme);
+  border-top: 1px solid var(--gris-clair);
+  padding: 1rem 1.5rem;
+}
+.nav-mobile ul { list-style: none; }
+.nav-mobile__lien {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: 1rem;
+  color: var(--texte);
+  padding: 0.65rem 0;
+  border-bottom: 1px solid var(--gris-clair);
+  text-decoration: none;
+}
+.nav-mobile__lien:hover { color: var(--vert-profond); }
+
+@media (max-width: 700px) {
+  .nav { display: none; }
+  .menu-toggle { display: flex; }
+  .nav-mobile.ouvert { display: block; }
+}
+</style>
+
+<script>
+const toggle = document.getElementById('menuToggle');
+const navMobile = document.getElementById('navMobile');
+toggle?.addEventListener('click', () => {
+  navMobile?.classList.toggle('ouvert');
+  const ouvert = navMobile?.classList.contains('ouvert');
+  navMobile?.setAttribute('aria-hidden', String(!ouvert));
+});
+</script>
