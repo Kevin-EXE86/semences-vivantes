@@ -1,0 +1,60 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  titre="Page introuvable"
+  description="Cette page n'existe pas sur Semences Vivantes."
+>
+  <div class="erreur-page">
+    <div class="container erreur-contenu">
+      <span class="erreur-emoji">🌾</span>
+      <h1>404</h1>
+      <p class="erreur-titre">Cette page s'est perdue dans le potager…</p>
+      <p class="erreur-desc">
+        La page que vous cherchez n'existe pas ou a été déplacée.
+        Retournez à l'accueil ou explorez nos articles.
+      </p>
+      <div class="erreur-actions">
+        <a href="/" class="btn btn-primaire">← Retour à l'accueil</a>
+        <a href="/blog" class="btn btn-secondaire">Voir le blog</a>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+.erreur-page {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+}
+.erreur-contenu {
+  text-align: center;
+  padding: 4rem 0;
+}
+.erreur-emoji { font-size: 4rem; display: block; margin-bottom: 1rem; }
+.erreur-contenu h1 {
+  font-size: 5rem;
+  color: var(--vert-pale);
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+.erreur-titre {
+  font-family: var(--font-titre);
+  font-size: 1.4rem;
+  color: var(--vert-profond);
+  margin-bottom: 1rem;
+}
+.erreur-desc {
+  color: var(--gris-chaud);
+  max-width: 400px;
+  margin: 0 auto 2rem;
+}
+.erreur-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+</style>

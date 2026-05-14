@@ -1,0 +1,101 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  titre="Mentions légales"
+  description="Mentions légales du site Semences Vivantes."
+  breadcrumbs={[{ label: 'Mentions légales', href: '/mentions-legales' }]}
+>
+  <div class="legal-entete">
+    <div class="container">
+      <h1>Mentions légales</h1>
+      <p>Conformément aux dispositions de la loi n° 2004-575 du 21 juin 2004 pour la confiance en l'économie numérique.</p>
+    </div>
+  </div>
+
+  <div class="container legal-contenu">
+    <article class="prose">
+
+      <h2>Éditeur du site</h2>
+      <p>
+        Le site <strong>semences-vivantes.fr</strong> est édité par un particulier.<br/>
+        <strong>Responsable de publication :</strong> Alexandre FIEFFE<br/>
+        <strong>Email :</strong> contact@semences-vivantes.fr<br/>
+        <strong>Adresse :</strong> 4 Plan de la celle 86000 Poitiers
+      </p>
+
+      <h2>Hébergement</h2>
+      <p>
+        Ce site est hébergé par <strong>Netlify, Inc.</strong><br/>
+        44 Montgomery Street, Suite 300<br/>
+        San Francisco, California 94104, USA<br/>
+        <a href="https://www.netlify.com" target="_blank" rel="noopener">www.netlify.com</a>
+      </p>
+
+      <h2>Propriété intellectuelle</h2>
+      <p>
+        L'ensemble du contenu de ce site (textes, articles, guides) est protégé par le droit d'auteur.
+        Toute reproduction, même partielle, est interdite sans autorisation préalable de l'éditeur,
+        sauf dans le cadre des exceptions légales prévues par le Code de la propriété intellectuelle.
+      </p>
+      <p>
+        Les articles sont publiés sous licence <strong>Creative Commons BY-NC 4.0</strong> :
+        vous pouvez les partager en citant la source, mais pas à des fins commerciales.
+      </p>
+
+      <h2>Liens d'affiliation</h2>
+      <p>
+        Certains liens présents sur ce site sont des <strong>liens d'affiliation</strong>.
+        Cela signifie que si vous cliquez sur un lien et effectuez un achat,
+        nous percevons une commission de la part du marchand partenaire,
+        <strong>sans aucun surcoût pour vous</strong>.
+      </p>
+      <p>
+        Programmes d'affiliation auxquels ce site participe :
+      </p>
+      <ul>
+        <li><strong>Programme Partenaires Amazon</strong> — en tant que Partenaire Amazon, nous réalisons un bénéfice sur les achats remplissant les conditions requises.</li>
+        <li><strong>Programme d'affiliation Agrieuro</strong></li>
+        <li><strong>Programme d'affiliation ManoMano</strong> (via Awin)</li>
+      </ul>
+      <p>
+        Tous les produits recommandés sur ce site sont sélectionnés de manière indépendante.
+        Les partenariats commerciaux n'influencent pas nos recommandations éditoriales.
+      </p>
+
+      <h2>Limitation de responsabilité</h2>
+      <p>
+        Les informations contenues sur ce site sont fournies à titre indicatif et général.
+        Elles ne sauraient constituer des conseils professionnels en matière d'agriculture ou de jardinage.
+        L'éditeur ne saurait être tenu responsable des dommages directs ou indirects résultant de l'utilisation de ces informations.
+      </p>
+
+      <h2>Droit applicable</h2>
+      <p>
+        Les présentes mentions légales sont soumises au droit français.
+        En cas de litige, les tribunaux français seront seuls compétents.
+      </p>
+
+      <p class="legal-date"><em>Dernière mise à jour : mai 2025</em></p>
+
+    </article>
+  </div>
+</BaseLayout>
+
+<style>
+.legal-entete {
+  background: linear-gradient(135deg, var(--creme), var(--vert-pale));
+  padding: 3rem 0 2.5rem;
+  border-bottom: 1px solid var(--gris-clair);
+  margin-bottom: 3rem;
+}
+.legal-entete h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+.legal-entete p  { color: var(--gris-chaud); margin: 0; }
+
+.legal-contenu {
+  max-width: 760px;
+  padding-bottom: 5rem;
+}
+.legal-date { margin-top: 3rem; color: var(--gris-chaud); font-size: 0.88rem; }
+</style>

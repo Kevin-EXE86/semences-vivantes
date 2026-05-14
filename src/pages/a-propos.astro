@@ -1,0 +1,132 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const articles = await getCollection('blog', ({ data }) => !data.brouillon);
+---
+
+<BaseLayout
+  titre="À propos"
+  description="Qui se cache derrière Semences Vivantes ? Découvrez notre histoire et notre mission pour la biodiversité potagère."
+  breadcrumbs={[{ label: 'À propos', href: '/a-propos' }]}
+>
+  <div class="apropos-entete">
+    <div class="container">
+      <h1>À propos de Semences Vivantes</h1>
+    </div>
+  </div>
+
+  <div class="container apropos-contenu">
+    <article class="prose apropos-texte">
+
+      <h2>Notre mission</h2>
+      <p>
+        <strong>Semences Vivantes</strong> est un blog indépendant créé par passion pour le jardinage biologique
+        et la préservation de la biodiversité potagère. Notre objectif est simple : rendre accessible
+        à tous le jardinage avec des semences anciennes, reproductibles et biologiques.
+      </p>
+      <p>
+        Dans un monde où des milliers de variétés potagères ont disparu en quelques décennies,
+        nous croyons que chaque jardinier peut être acteur de la préservation du patrimoine semencier.
+      </p>
+
+      <h2>Ce que vous trouverez ici</h2>
+      <ul>
+        <li>Des <strong>guides pratiques</strong> pour choisir, semer, cultiver et conserver ses graines</li>
+        <li>Un <strong>calendrier des semis</strong> mis à jour chaque mois</li>
+        <li>Des <strong>fiches variétés</strong> sur les semences anciennes méconnues</li>
+        <li>Des <strong>ressources sélectionnées</strong> (semenciers, outils, livres) que nous recommandons vraiment</li>
+      </ul>
+
+      <h2>Transparence & affiliation</h2>
+      <p>
+        Ce blog est gratuit et indépendant. Pour le maintenir, nous utilisons des <strong>liens d'affiliation</strong> :
+        quand vous achetez un produit via nos liens, nous touchons une petite commission sans surcoût pour vous.
+        Cela nous permet de continuer à produire du contenu de qualité librement.
+      </p>
+      <p>
+        Nos recommandations sont toujours sincères et indépendantes de nos partenariats commerciaux.
+        Nous ne recommandons que ce que nous connaissons et apprécions vraiment.
+      </p>
+
+      <h2>Nous contacter</h2>
+      <p>
+        Une question, une suggestion, un partenariat éditorial ?<br/>
+        Écrivez-nous à <strong>contact@semences-vivantes.fr</strong>
+      </p>
+
+    </article>
+
+    <!-- Stats rapides -->
+    <aside class="apropos-stats">
+      <div class="stat-card">
+        <span class="stat-card__nb">{articles.length}</span>
+        <span class="stat-card__label">Articles publiés</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-card__nb">100%</span>
+        <span class="stat-card__label">Contenu gratuit</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-card__nb">🌱</span>
+        <span class="stat-card__label">Indépendant & passionné</span>
+      </div>
+    </aside>
+  </div>
+</BaseLayout>
+
+<style>
+.apropos-entete {
+  background: linear-gradient(135deg, var(--creme), var(--vert-pale));
+  padding: 3rem 0 2.5rem;
+  border-bottom: 1px solid var(--gris-clair);
+  margin-bottom: 3rem;
+}
+.apropos-entete h1 { font-size: 2rem; }
+
+.apropos-contenu {
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  gap: 3rem;
+  align-items: start;
+  padding-bottom: 5rem;
+}
+
+.apropos-texte { max-width: 100%; }
+
+.apropos-stats {
+  position: sticky;
+  top: 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.stat-card {
+  background: var(--blanc);
+  border: 1px solid var(--gris-clair);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.stat-card__nb {
+  font-family: var(--font-titre);
+  font-size: 2rem;
+  color: var(--vert-profond);
+  font-weight: 700;
+}
+.stat-card__label {
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  color: var(--gris-chaud);
+}
+
+@media (max-width: 800px) {
+  .apropos-contenu { grid-template-columns: 1fr; }
+  .apropos-stats { position: static; flex-direction: row; flex-wrap: wrap; }
+  .stat-card { flex: 1; min-width: 140px; }
+}
+</style>

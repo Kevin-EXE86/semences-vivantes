@@ -1,0 +1,108 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  titre="Politique de confidentialité"
+  description="Politique de confidentialité et gestion des données personnelles de Semences Vivantes."
+  breadcrumbs={[{ label: 'Politique de confidentialité', href: '/politique-confidentialite' }]}
+>
+  <div class="legal-entete">
+    <div class="container">
+      <h1>Politique de confidentialité</h1>
+      <p>Comment nous collectons, utilisons et protégeons vos données personnelles.</p>
+    </div>
+  </div>
+
+  <div class="container legal-contenu">
+    <article class="prose">
+
+      <h2>1. Responsable du traitement</h2>
+      <p>
+        [Votre Nom Prénom], éditeur de semences-vivantes.fr<br/>
+        Email : contact@semences-vivantes.fr
+      </p>
+
+      <h2>2. Données collectées</h2>
+      <p>Ce site collecte les données suivantes :</p>
+      <ul>
+        <li><strong>Newsletter :</strong> adresse email (si vous vous inscrivez volontairement)</li>
+        <li><strong>Données de navigation :</strong> pages visitées, durée de visite, via Google Analytics (anonymisé)</li>
+        <li><strong>Cookies d'affiliation :</strong> identifiants de session pour les programmes partenaires Amazon, Agrieuro, ManoMano</li>
+      </ul>
+      <p>Aucune donnée sensible n'est collectée. Aucune donnée n'est vendue à des tiers.</p>
+
+      <h2>3. Finalités du traitement</h2>
+      <ul>
+        <li>Envoi de la newsletter (base légale : consentement)</li>
+        <li>Analyse de l'audience pour améliorer le contenu (base légale : intérêt légitime)</li>
+        <li>Attribution des commissions d'affiliation (base légale : intérêt légitime)</li>
+      </ul>
+
+      <h2>4. Cookies</h2>
+      <p>Ce site utilise plusieurs types de cookies :</p>
+      <ul>
+        <li><strong>Cookies essentiels :</strong> nécessaires au fonctionnement du site (session, préférences)</li>
+        <li><strong>Cookies analytiques :</strong> Google Analytics, pour mesurer l'audience de manière anonymisée</li>
+        <li><strong>Cookies d'affiliation :</strong> déposés par Amazon, Agrieuro et ManoMano lors de vos clics sur nos liens partenaires. Ces cookies permettent de tracer les ventes et calculer nos commissions.</li>
+      </ul>
+      <p>
+        Vous pouvez refuser ou supprimer les cookies via les paramètres de votre navigateur.
+        Le refus des cookies d'affiliation n'affecte pas votre navigation, mais empêche l'attribution de commissions.
+      </p>
+
+      <h2>5. Durée de conservation</h2>
+      <ul>
+        <li>Données newsletter : jusqu'à désinscription</li>
+        <li>Données analytiques : 26 mois (paramètre Google Analytics)</li>
+        <li>Cookies d'affiliation : 24 à 90 jours selon le programme</li>
+      </ul>
+
+      <h2>6. Vos droits (RGPD)</h2>
+      <p>Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez des droits suivants :</p>
+      <ul>
+        <li><strong>Droit d'accès</strong> à vos données</li>
+        <li><strong>Droit de rectification</strong> des données inexactes</li>
+        <li><strong>Droit à l'effacement</strong> ("droit à l'oubli")</li>
+        <li><strong>Droit d'opposition</strong> au traitement</li>
+        <li><strong>Droit à la portabilité</strong> de vos données</li>
+      </ul>
+      <p>
+        Pour exercer ces droits, contactez-nous à : <strong>contact@semences-vivantes.fr</strong><br/>
+        Vous pouvez également introduire une réclamation auprès de la <strong>CNIL</strong> (www.cnil.fr).
+      </p>
+
+      <h2>7. Sécurité</h2>
+      <p>
+        Ce site est servi en HTTPS. Les données de newsletter sont stockées chez un prestataire certifié.
+        Nous ne stockons aucune donnée de paiement.
+      </p>
+
+      <h2>8. Modifications</h2>
+      <p>
+        Cette politique peut être mise à jour. La date de dernière modification est indiquée ci-dessous.
+        Nous vous encourageons à la consulter régulièrement.
+      </p>
+
+      <p class="legal-date"><em>Dernière mise à jour : mai 2025</em></p>
+
+    </article>
+  </div>
+</BaseLayout>
+
+<style>
+.legal-entete {
+  background: linear-gradient(135deg, var(--creme), var(--vert-pale));
+  padding: 3rem 0 2.5rem;
+  border-bottom: 1px solid var(--gris-clair);
+  margin-bottom: 3rem;
+}
+.legal-entete h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+.legal-entete p  { color: var(--gris-chaud); margin: 0; }
+
+.legal-contenu {
+  max-width: 760px;
+  padding-bottom: 5rem;
+}
+.legal-date { margin-top: 3rem; color: var(--gris-chaud); font-size: 0.88rem; }
+</style>
