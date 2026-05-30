@@ -1,7 +1,7 @@
 ---
 title: "Légumes à semer en juin : profitez des longues journées"
 description: "Juin est le mois idéal pour enchaîner les semis de plein été. Voici les légumes à semer en priorité pour des récoltes jusqu'à l'automne."
-pubDate: 2026-06-01
+pubDate: 2026-05-30
 author: "semences-vivantes.fr"
 tags: ["semis", "juin", "potager", "légumes d'été"]
 ---
