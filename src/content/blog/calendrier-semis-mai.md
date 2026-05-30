@@ -1,82 +1,46 @@
 ---
-titre: "Calendrier des semis : que planter en mai ?"
-description: "Mai est le mois le plus généreux du jardinier. Tomates, courges, haricots, basilic… découvrez tout ce que vous pouvez semer et planter ce mois-ci."
-date: 2025-05-02
-categorie: Calendrier
-tempsLecture: 5
+title: "Légumes à semer en juin : profitez des longues journées"
+description: "Juin est le mois idéal pour enchaîner les semis de plein été. Voici les légumes à semer en priorité pour des récoltes jusqu'à l'automne."
+pubDate: 2026-06-01
+author: "semences-vivantes.fr"
+tags: ["semis", "juin", "potager", "légumes d'été"]
 ---
 
-Mai est sans doute le mois le plus excitant du calendrier du jardinier. Les gelées sont (presque) derrière nous, le sol se réchauffe et une avalanche de semis devient possible. Voici votre guide mois par mois pour ne rien rater.
+Juin marque le début de l'été au potager. Les températures sont clémentes, la terre est chaude, et les jours n'ont jamais été aussi longs. C'est le moment parfait pour enchaîner les semis et assurer des récoltes continues jusqu'en automne.
 
-## Ce que vous pouvez semer en mai
+## Les légumes à semer en juin
 
-### En pleine terre, directement
+### 🥒 Courgettes et cucurbitacées
 
-Le sol est suffisamment chaud (plus de 12°C) pour semer directement à l'extérieur :
+Si ce n'est pas encore fait, c'est votre dernière chance de semer **courgettes, concombres et courges** directement en place. La chaleur du sol favorise une levée rapide en 4 à 6 jours. Semez 2 à 3 graines par poquet, puis ne gardez que le plant le plus vigoureux.
 
-- **Haricots verts et mangetout** — attendez mi-mai pour éviter les gelées tardives
-- **Courgettes et concombres** — semez en godet ou directement si le sol est chaud
-- **Carottes, radis, betteraves** — semis directs parfaits pour des récoltes estivales
-- **Épinards et mâche** — fin mai pour éviter la montée en graines rapide
-- **Pois** — dernière chance avant que la chaleur ne les épuise
-- **Basilic** — attendez que les nuits soient douces (15°C minimum)
+### 🥕 Carottes et betteraves
 
-### Sous abri ou en godets
+Juin est idéal pour un **semis de carottes de mi-saison** à récolter à l'automne. Privilégiez des variétés comme *Nantaise améliorée* ou *Touchon*. Pour les betteraves, les variétés rondes comme *Detroit* se sèment encore facilement ce mois-ci.
 
-Pour les légumes qui ont besoin d'un départ protégé :
+### 🌿 Haricots verts et haricots à rames
 
-- **Tomates** (si ce n'est pas encore fait) — elles sont encore semables jusqu'à mi-mai dans le Sud
-- **Poivrons et aubergines** — semis tardifs possibles sous serre chaude
-- **Céleri-rave** — semez en godets, il faut 4 mois avant récolte
+Les haricots adorent la chaleur. Semez-les directement en pleine terre, tous les 10 à 15 jours jusqu'à mi-juillet, pour étaler les récoltes. Évitez de semer par temps de sécheresse — attendez un ciel couvert ou arrosez bien après le semis.
 
----
+### 🥬 Salades et mâche
 
-## Ce que vous pouvez planter (repiquage)
+Pour éviter la montaison due à la chaleur, orientez-vous vers des **variétés résistantes à la montée en graines** : *Laitue batavia Reine des glaces*, *Lollo rossa* ou *Romaine*. Semez en fin de journée et maintenez le sol frais les premiers jours.
 
-Mai est aussi le grand mois des **plantations en pleine terre** :
+### 🌱 Navets et radis
 
-### Après les Saints de Glace (13-15 mai)
-C'est la règle d'or : attendez les Saints de Glace (Mamert, Pancrace, Servais) avant de planter les légumes frileuses.
+Les navets semés en juin donneront de belles récoltes en août-septembre. Les radis, eux, restent des semis express (3 semaines) : semez-en une petite rangée chaque semaine pour ne jamais en manquer.
 
-- 🍅 **Tomates** — plantez profond, jusqu'aux premières feuilles
-- 🫑 **Poivrons et aubergines** — sols réchauffés, plein soleil obligatoire
-- 🥒 **Courgettes et courges** — 1m² minimum par pied
-- 🌿 **Basilic** — à mettre près des tomates, ils s'apprécient
+## Conseils pratiques pour réussir ses semis de juin
 
-### Dès le début mai
-- Laitues et salades repiquées
-- Choux, brocolis, choux-fleurs
-- Poireaux (à repiquer fin mai / début juin)
+- **Arrosez tôt le matin ou en soirée** pour éviter l'évaporation rapide.
+- **Paillez le sol** dès la levée pour conserver l'humidité et limiter l'arrosage.
+- **Ombrez légèrement** les semis de salades pendant les premières chaleurs.
+- **Conservez vos graines au frais** : un été chaud peut vite détériorer des semences mal stockées.
+
+## Ce qu'il ne faut plus semer en juin
+
+Évitez de semer des **tomates, poivrons ou aubergines** : il est trop tard pour qu'ils arrivent à maturité avant les premières gelées. Réservez votre énergie aux légumes à cycle court ou qui apprécient l'automne.
 
 ---
 
-## Les tâches du jardinier en mai
-
-**Arrosage :** les nuits sont encore fraîches, arrosez le matin. Évitez les arrosages en plein soleil.
-
-**Paillage :** installez votre paillis maintenant — paille, BRF (Bois Raméal Fragmenté) ou tonte de gazon séchée. Il limitera l'évaporation tout l'été.
-
-**Tuteurage :** anticipez le tuteurage des tomates dès la plantation. Un tuteur solide de 1,5m minimum.
-
-**Traitements préventifs bio :** appliquez de la bouillie bordelaise sur les tomates et pommes de terre avant les premières pluies pour prévenir le mildiou.
-
----
-
-## Tableau récapitulatif de mai
-
-| Légume | Semis extérieur | Plantation | Récolte estimée |
-|---|---|---|---|
-| Haricots verts | Mi-mai | — | Juillet-août |
-| Courgettes | Début mai | Après Saints de Glace | Juillet |
-| Tomates | Début mai (sous abri) | Après Saints de Glace | Août-sept |
-| Carottes | Tout le mois | — | Août-sept |
-| Basilic | Fin mai | Après Saints de Glace | Juin-oct |
-| Radis | Tout le mois | — | Juin |
-
----
-
-## Conseil du mois
-
-> Faites vos semis de haricots par **vagues successives** : une rangée toutes les 2 semaines de mai à mi-juillet. Vous aurez ainsi des récoltes étalées sur 3 mois plutôt qu'une abondance impossible à consommer d'un coup.
-
-Bon jardinage ! 🌱
+Juin est un mois généreux au jardin. Avec quelques semis bien choisis et un arrosage régulier, vous garantissez un potager productif jusqu'aux premiers froids. Bons semis !
