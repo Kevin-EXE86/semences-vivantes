@@ -1,7 +1,7 @@
 ---
 titre: "Régénérer un sol dégradé : les techniques de l'agroécologie au potager"
 description: "Sol tassé, appauvri ou pollué ? L'agroécologie offre des solutions concrètes pour redonner vie à votre terre : engrais verts, compost, BRF, mycorhizes... Guide pratique pour réparer votre sol naturellement."
-date: 2026-06-08
+date: 2026-06-04
 categorie: Potager bio
 tempsLecture: 11
 ---
