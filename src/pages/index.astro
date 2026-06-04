@@ -114,27 +114,48 @@ const categories = [
     </div>
   </section>
 
-  <!-- ══════════════════════════════
-       NEWSLETTER
-  ══════════════════════════════ -->
-  <section class="section-newsletter">
-    <div class="container">
-      <div class="newsletter-bloc">
-        <h2>Restez dans la boucle des semailles</h2>
-        <p>Chaque mois, les conseils de saison, les bons plans et nos nouveaux guides.</p>
-        <form class="newsletter-form" onsubmit="return false;">
-          <input
-            type="email"
-            placeholder="votre@email.fr"
-            class="newsletter-form__input"
-            aria-label="Votre adresse email"
-          />
-          <button type="submit" class="btn btn-primaire">S'inscrire</button>
-        </form>
-        <p class="newsletter-note">Pas de spam. Désinscription en un clic.</p>
+  <!-- ══ NEWSLETTER BREVO ══ -->
+<section class="section-newsletter">
+  <div class="container">
+    <div class="newsletter-bloc">
+      <div class="sib-form" style="text-align:center; background-color:#2d4a2d;">
+        <div id="sib-form-container" class="sib-form-container">
+          <div id="sib-container" class="sib-container--large sib-container--vertical" style="max-width:540px; text-align:center; background-color:rgba(255,255,255,1); border-radius:8px; margin:0 auto;">
+            <form id="sib-form" method="POST" action="https://a0346770.sibforms.com/serve/MUIFABr1ojTC4B2SA07Bv7YJYso4Pwk2oye5JIGDu69Us8SYI4FjVruLAYx5GDOzkcHmAxeTk2QGWAqS9jq56oMdD6iqYxHA9VJQ3on6gi32WC7fe9p82-qISH7RSM8hh2LqGdoW-OlqkN8PWVsvXClh1c_Vg2tEjQKIC5NbjlY92wAC_sErdBB59o2zvXKVTT_oB_jq_u2PiDj6Ng==" data-type="subscription" style="padding:2rem;">
+              <p style="font-family:var(--font-titre); font-size:1.4rem; font-weight:700; color:var(--vert-profond); margin-bottom:0.5rem;">🌱 Restez dans la boucle des semailles</p>
+              <p style="font-family:var(--font-ui); font-size:0.9rem; color:var(--gris-chaud); margin-bottom:1.5rem;">Chaque mois, les conseils de saison, les bons plans jardinage et nos nouveaux guides sur les semences bio.</p>
+
+              <div style="margin-bottom:1rem; text-align:left;">
+                <label style="font-family:var(--font-ui); font-size:0.85rem; display:flex; gap:0.5rem; align-items:flex-start; color:var(--texte);">
+                  <input type="checkbox" id="NEWSLETTER_OPTIN" name="NEWSLETTER_OPTIN" value="1" required style="margin-top:3px; flex-shrink:0;" />
+                  <span>J'accepte de recevoir la newsletter Semences Vivantes. Désinscription possible à tout moment.</span>
+                </label>
+              </div>
+
+              <div style="margin-bottom:1rem;">
+                <input type="text" id="EMAIL" name="EMAIL" placeholder="votre@email.fr" required autocomplete="off"
+                  style="width:100%; padding:0.75rem 1rem; border:1.5px solid var(--gris-clair); border-radius:var(--radius); font-family:var(--font-ui); font-size:0.9rem; color:var(--texte);" />
+              </div>
+
+              <div class="g-recaptcha" data-sitekey="6LdlogwtAAAAABCgdg6cdaUFXSFmhR-6ENmmnaUZ" style="margin-bottom:1rem; display:flex; justify-content:center;"></div>
+
+              <button type="submit" style="width:100%; background:var(--vert-profond); color:white; font-family:var(--font-ui); font-weight:600; font-size:0.95rem; padding:0.85rem; border:none; border-radius:var(--radius); cursor:pointer;">
+                S'INSCRIRE
+              </button>
+
+              <p style="font-family:var(--font-ui); font-size:0.72rem; color:var(--gris-chaud); margin-top:0.75rem; font-style:italic;">
+                Pas de spam. Désinscription en un clic.
+              </p>
+
+              <input type="text" name="email_address_check" value="" style="display:none;">
+              <input type="hidden" name="locale" value="fr">
+            </form>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
 </BaseLayout>
 
