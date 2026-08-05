@@ -1,97 +1,121 @@
 ---
-titre: "Calendrier des semis : que faire au potager en juillet ?"
-description: "Juillet rime avec récoltes abondantes mais aussi avec gestion de la chaleur. Voici quoi semer, planter et surveiller ce mois-ci pour préparer l'automne."
-date: 2026-07-01
+titre: "Calendrier des semis : que faire au potager en août ?"
+description: "Août est le mois charnière entre l'été et l'automne. On continue de récolter à plein régime tout en semant les légumes d'automne et d'hiver. Voici votre guide complet pour ne rien rater."
+date: 2026-08-01
 categorie: Calendrier
-tempsLecture: 6
+tempsLecture: 7
 ---
 
-Juillet est un mois de transition au potager : on récolte à pleines mains les légumes d'été tout en préparant déjà les cultures d'automne. C'est aussi le mois où la gestion de la chaleur devient une priorité absolue.
+Août est un mois paradoxal au potager : on est en plein été, les récoltes sont abondantes, et pourtant il faut déjà penser à l'automne et à l'hiver. C'est le mois des transitions et des anticipations. Bien géré, il garantit un potager productif jusqu'en décembre.
 
-## Ce que vous pouvez encore semer en juillet
+## Ce que vous pouvez semer en août
 
-### En pleine terre
+### En pleine terre — les légumes d'automne
 
-Contrairement aux idées reçues, juillet n'est pas trop tard pour semer. C'est même le bon moment pour plusieurs légumes à cycle court qui arriveront à maturité en fin d'été ou en automne :
+Août est le dernier mois pour semer plusieurs légumes qui arriveront à maturité en automne. Ne tardez pas !
 
-- **Haricots verts nains** — dernière vague possible jusqu'à mi-juillet pour une récolte en septembre
-- **Carottes d'automne** — semez début juillet pour une récolte d'octobre-novembre
-- **Betteraves** — semis jusqu'à mi-juillet
-- **Radis d'été** — résistent bien à la chaleur si arrosés régulièrement
-- **Navets** — excellents semés en juillet pour une récolte automnale
-- **Fenouil bulbeux** — semis de juillet à août pour l'automne
-- **Chicorées et scaroles** — semis en pleine terre dès la mi-juillet
+- **Navets** — semis tout le mois pour une récolte d'octobre-novembre. Choisissez des variétés à cycle court comme le Navet Boule d'Or
+- **Radis d'automne** — semis dès début août pour des récoltes en septembre-octobre. Les radis noirs et blancs longs sont parfaits
+- **Épinards** — semis à partir de mi-août pour une récolte automnale. Évitez de semer avant car ils montent en graines avec la chaleur
+- **Mâche** — semis à partir de mi-août pour une récolte de novembre à mars. La mâche est l'une des rares cultures qui résiste au gel
+- **Roquette** — semis tout le mois pour des récoltes en septembre-octobre
+- **Betteraves** — dernière chance début août pour une récolte d'automne
+- **Fenouil bulbeux** — semis jusqu'à mi-août pour l'automne
 
-### Pour les récoltes d'automne et d'hiver
+### En pépinière — les légumes d'hiver
 
-C'est le moment de penser aux légumes qui passeront l'hiver :
+Certains légumes ont besoin d'être semés en pépinière en août pour être repiqués en septembre-octobre :
 
-- **Choux d'automne et d'hiver** (chou de Milan, chou rouge) — semez en pépinière pour repiquer en août
-- **Poireaux d'hiver** — dernière fenêtre de semis en pépinière
-- **Mâche** — semis possible dès fin juillet pour les variétés les plus précoces
+- **Mâche en godets** — repiquage plus facile que le semis en ligne
+- **Laitues d'hiver** (Rouge de Grenoble, Merveille d'hiver) — semis en pépinière pour repiquer fin août début septembre
+- **Épinards géants** — variétés résistantes au froid à repiquer en automne
+- **Chou-rave** — semis en godets pour repiquer en septembre
+
+### Les derniers semis de l'été
+
+Si vous avez encore de la place :
+- **Haricots nains** — toute dernière chance début août dans les régions les plus chaudes (Sud-Ouest, PACA)
+- **Basilic** — pour une dernière récolte avant les premiers froids
 
 ---
 
 ## Les récoltes du mois
 
-Juillet est généreux ! Voici ce qui arrive à maturité :
+Août est le mois le plus généreux du potager. Profitez-en !
 
-- 🍅 **Tomates** — les premières variétés précoces commencent à mûrir
-- 🥒 **Courgettes** — récolte abondante, ne laissez pas grossir excessivement
-- 🫘 **Haricots verts** — récoltez régulièrement pour stimuler la production
-- 🧄 **Ail et échalotes** — récoltez quand les fanes jaunissent et se couchent
-- 🥕 **Carottes de printemps** — c'est la pleine saison
-- 🍓 **Framboises d'été** — récolte continue
+- 🍅 **Tomates** — plein régime, toutes les variétés sont en production
+- 🌽 **Maïs doux** — récoltez quand les soies brunissent et que le grain est laiteux
+- 🥒 **Courgettes et concombres** — récolte quotidienne nécessaire
+- 🫑 **Poivrons et aubergines** — pleine saison
+- 🧅 **Oignons** — récoltez quand les fanes tombent naturellement
+- 🥕 **Carottes** — récolte continue
+- 🫘 **Haricots** — dernières récoltes des semis de juin
+- 🍆 **Aubergines** — ne laissez pas les fruits trop grossir, la peau durcit
+- 🌿 **Basilic** — récoltez régulièrement pour éviter la floraison
 
-> Astuce : récoltez les courgettes et haricots tous les 2-3 jours. Plus vous récoltez, plus la plante produit — c'est un cercle vertueux !
-
----
-
-## Gérer la chaleur — la priorité du mois
-
-Juillet est souvent marqué par des épisodes de forte chaleur. Quelques règles essentielles :
-
-### Arrosage stratégique
-- Arrosez **tôt le matin** (avant 9h) ou **en soirée** (après 19h) pour limiter l'évaporation
-- Arrosez **abondamment mais moins souvent** plutôt que peu et souvent — cela encourage les racines à descendre en profondeur
-- Privilégiez un **arrosage au pied** plutôt qu'en pluie, pour éviter le gaspillage et limiter les maladies fongiques
-
-### Paillage renforcé
-Si ce n'est pas déjà fait, c'est le moment crucial. Une couche de paillis de 5 à 10 cm réduit l'évaporation de 70% et maintient une température de sol plus stable.
-
-### Protection contre le soleil brûlant
-Pour les jeunes plants ou les variétés sensibles (salades, épinards), un voile d'ombrage léger pendant les heures les plus chaudes évite la montée en graines prématurée et les brûlures foliaires.
+> **Astuce tomates :** en fin août, pincez les sommets des pieds de tomates (écimage). Cela stoppe la végétation et concentre l'énergie sur la maturation des fruits déjà formés — précieux avant les premières gelées d'octobre.
 
 ---
 
-## Surveillance et entretien
+## Les tâches essentielles d'août
 
-**Maladies et nuisibles d'été :**
-- Surveillez le **mildiou** sur tomates et pommes de terre, surtout après un orage
-- Inspectez les courgettes pour l'**oïdium** (feuilles blanchâtres) — fréquent en cas de chaleur sèche
-- Les **pucerons** prolifèrent par temps chaud — favorisez les coccinelles et chrysopes
+### Gestion de l'eau
 
-**Taille et entretien :**
-- Supprimez les gourmands des tomates (pousses entre tige principale et branches)
-- Taillez les extrémités des cucurbitacées trop envahissantes
-- Continuez à butter les pommes de terre tardives
+La chaleur d'août impose une vigilance quotidienne :
+- Arrosez **tôt le matin** (avant 8h) ou **en soirée** (après 19h)
+- Préférez un arrosage **profond et espacé** (tous les 2-3 jours) plutôt que quotidien et superficiel
+- Le paillage reste votre meilleure économie d'eau — maintenant 60 à 70 % d'évaporation en moins
+
+### Préparer les emplacements d'automne
+
+Dès qu'une culture est terminée, ne laissez pas le sol nu :
+1. Arrachez les plants épuisés
+2. Amendez avec du compost (2-3 kg/m²)
+3. Semez un engrais vert ou préparez l'emplacement pour les légumes d'automne
+
+### Récolter les semences
+
+Août est le mois idéal pour récolter vos propres graines :
+- **Tomates** — laissez mûrir complètement 2-3 beaux fruits, extrayez les graines et faites-les fermenter 48h avant séchage
+- **Courges et courgettes** — laissez un fruit sur pied jusqu'à ce que sa peau soit dure et sa couleur terne
+- **Haricots** — laissez sécher les gousses directement sur le pied
+- **Basilic** — laissez monter en fleurs puis en graines quelques tiges
+
+### Surveiller les maladies de fin d'été
+
+- **Mildiou** sur tomates et pommes de terre : après les orages d'août, inspectez le feuillage. Supprimez les feuilles atteintes, traitez à la bouillie bordelaise si nécessaire
+- **Oïdium** sur courgettes et courges : feuilles recouvertes d'un duvet blanc. Aérez, supprimez les feuilles les plus atteintes, traitez au bicarbonate de soude dilué
+- **Pourriture grise (botrytis)** : favorisée par l'humidité nocturne. Supprimez les parties atteintes
 
 ---
 
-## Tableau récapitulatif de juillet
+## Tableau récapitulatif d'août
 
-| Action | Légumes concernés | Période |
+| Action | Légumes | Période |
 |---|---|---|
-| Semer en pleine terre | Carottes, betteraves, navets, haricots | Tout le mois |
-| Semer en pépinière | Choux d'hiver, poireaux | Début juillet |
-| Récolter | Tomates, courgettes, ail, haricots | Tout le mois |
-| Arroser | Tout le potager | Matin ou soir |
-| Pailler | Zones non couvertes | Avant la canicule |
+| Semer en pleine terre | Navets, radis, épinards, mâche, roquette | Tout le mois |
+| Semer en pépinière | Laitues d'hiver, mâche | Mi-août |
+| Récolter | Tomates, poivrons, courgettes, maïs, oignons | Tout le mois |
+| Récolter les graines | Tomates, courges, haricots, basilic | Tout le mois |
+| Écimer | Tomates | Fin août |
+| Préparer les emplacements | Sols libérés par les récoltes | Dès que possible |
+
+---
+
+## Les variétés anciennes à mettre en avant en août
+
+Août est le mois parfait pour découvrir la richesse des variétés potagères anciennes :
+
+- **Tomate Cœur de Bœuf** — chair dense, peu de graines, saveur exceptionnelle
+- **Tomate Ananas** — bicolore jaune et rouge, très sucrée
+- **Poivron Corno di Toro** — long, doux et charnu, idéal pour la ratatouille
+- **Aubergine Listada de Gandia** — rayée violet et blanc, saveur délicate
+- **Courge Potimarron** — chair sucrée, conservation jusqu'en janvier
+
+Ces variétés sont toutes reproductibles : récoltez leurs graines pour les ressemer l'an prochain !
 
 ---
 
 ## Conseil du mois
 
-> Ne laissez jamais le sol à nu en plein été. Entre deux cultures, semez un engrais vert à croissance rapide comme la phacélie ou la moutarde — il protégera votre sol de la chaleur tout en l'enrichissant pour l'automne.
-
-Bon jardinage estival ! ☀️🌱
+> Août est le mois idéal pour **observer et noter**. Prenez le temps de photographier vos récoltes, de noter les variétés qui ont le mieux résisté à la chaleur, les associations qui ont fonctionné. Ces observations sont précieuses pour améliorer votre potager chaque année — c'est la base du jardinage vivant et autonome. 📓🌱
