@@ -1,121 +1,119 @@
 ---
-titre: "Calendrier des semis : que faire au potager en août ?"
-description: "Août est le mois charnière entre l'été et l'automne. On continue de récolter à plein régime tout en semant les légumes d'automne et d'hiver. Voici votre guide complet pour ne rien rater."
-date: 2026-08-01
+titre: "Calendrier des semis : que faire au potager en septembre ?"
+description: "Septembre marque le début de l'automne au potager. C'est le moment de préparer les cultures d'hiver, récolter les derniers légumes d'été et penser à la protection du sol pour les mois froids."
+date: 2026-09-01
 categorie: Calendrier
 tempsLecture: 7
 ---
 
-Août est un mois paradoxal au potager : on est en plein été, les récoltes sont abondantes, et pourtant il faut déjà penser à l'automne et à l'hiver. C'est le mois des transitions et des anticipations. Bien géré, il garantit un potager productif jusqu'en décembre.
+Septembre est le mois de la transition par excellence. Les nuits fraîchissent, les journées raccourcissent et le potager change de rythme. On range progressivement les légumes d'été et on installe les cultures qui nourriront la table jusqu'en plein hiver. C'est aussi l'un des mois les plus importants pour préparer le sol pour l'année suivante.
 
-## Ce que vous pouvez semer en août
+## Ce que vous pouvez encore semer en septembre
 
-### En pleine terre — les légumes d'automne
+### En pleine terre — les derniers semis de l'année
 
-Août est le dernier mois pour semer plusieurs légumes qui arriveront à maturité en automne. Ne tardez pas !
+Septembre offre encore une belle fenêtre de semis pour plusieurs légumes résistants au froid :
 
-- **Navets** — semis tout le mois pour une récolte d'octobre-novembre. Choisissez des variétés à cycle court comme le Navet Boule d'Or
-- **Radis d'automne** — semis dès début août pour des récoltes en septembre-octobre. Les radis noirs et blancs longs sont parfaits
-- **Épinards** — semis à partir de mi-août pour une récolte automnale. Évitez de semer avant car ils montent en graines avec la chaleur
-- **Mâche** — semis à partir de mi-août pour une récolte de novembre à mars. La mâche est l'une des rares cultures qui résiste au gel
-- **Roquette** — semis tout le mois pour des récoltes en septembre-octobre
-- **Betteraves** — dernière chance début août pour une récolte d'automne
-- **Fenouil bulbeux** — semis jusqu'à mi-août pour l'automne
+- **Mâche** — semis tout le mois, c'est le moment idéal. La mâche lève mieux avec des températures fraîches et supporte les gelées jusqu'à -15 °C
+- **Épinards d'hiver** — semis jusqu'à mi-septembre pour une récolte de novembre à mars. Choisissez des variétés rustiques comme le Monstrueux de Viroflay
+- **Roquette** — semis début septembre pour une récolte d'octobre avant les premières gelées
+- **Radis d'hiver** — Radis noir, radis blanc long de Thann — semis jusqu'à mi-septembre
+- **Laitues d'hiver** — variétés rustiques comme la Rouge de Grenoble ou la Merveille d'hiver à repiquer en septembre
+- **Ciboulette** — semis possible jusqu'en septembre pour une récolte printanière
+- **Ail** — plantation des caïeux à partir de mi-septembre, c'est le moment idéal pour l'ail à planter en automne
 
-### En pépinière — les légumes d'hiver
+### En pépinière et godets
 
-Certains légumes ont besoin d'être semés en pépinière en août pour être repiqués en septembre-octobre :
-
-- **Mâche en godets** — repiquage plus facile que le semis en ligne
-- **Laitues d'hiver** (Rouge de Grenoble, Merveille d'hiver) — semis en pépinière pour repiquer fin août début septembre
-- **Épinards géants** — variétés résistantes au froid à repiquer en automne
-- **Chou-rave** — semis en godets pour repiquer en septembre
-
-### Les derniers semis de l'été
-
-Si vous avez encore de la place :
-- **Haricots nains** — toute dernière chance début août dans les régions les plus chaudes (Sud-Ouest, PACA)
-- **Basilic** — pour une dernière récolte avant les premiers froids
+- **Pensées et autres fleurs comestibles** pour agrémenter le potager au printemps
+- **Oignons blancs** — semis en godets pour une récolte printanière précoce
 
 ---
 
-## Les récoltes du mois
+## Les récoltes de septembre
 
-Août est le mois le plus généreux du potager. Profitez-en !
+### Les derniers légumes d'été
 
-- 🍅 **Tomates** — plein régime, toutes les variétés sont en production
-- 🌽 **Maïs doux** — récoltez quand les soies brunissent et que le grain est laiteux
-- 🥒 **Courgettes et concombres** — récolte quotidienne nécessaire
-- 🫑 **Poivrons et aubergines** — pleine saison
-- 🧅 **Oignons** — récoltez quand les fanes tombent naturellement
-- 🥕 **Carottes** — récolte continue
-- 🫘 **Haricots** — dernières récoltes des semis de juin
-- 🍆 **Aubergines** — ne laissez pas les fruits trop grossir, la peau durcit
-- 🌿 **Basilic** — récoltez régulièrement pour éviter la floraison
+Profitez des dernières récoltes avant les premiers froids :
 
-> **Astuce tomates :** en fin août, pincez les sommets des pieds de tomates (écimage). Cela stoppe la végétation et concentre l'énergie sur la maturation des fruits déjà formés — précieux avant les premières gelées d'octobre.
+- 🍅 **Tomates** — accélérez la maturation en supprimant les feuilles basses et en réduisant les arrosages. Les fruits verts récoltés avant les gelées mûriront en intérieur
+- 🫑 **Poivrons et aubergines** — dernières récoltes, profitez-en pour faire des conserves
+- 🥒 **Courges et potirons** — récoltez quand le pédoncule commence à se liéger. Laissez-les sécher 2-3 semaines au soleil avant de les stocker
+- 🌽 **Maïs doux** — dernières récoltes
+- 🫘 **Haricots** — si les gousses ont durci, laissez-les sécher pour récupérer les graines
 
----
+### Les légumes d'automne
 
-## Les tâches essentielles d'août
-
-### Gestion de l'eau
-
-La chaleur d'août impose une vigilance quotidienne :
-- Arrosez **tôt le matin** (avant 8h) ou **en soirée** (après 19h)
-- Préférez un arrosage **profond et espacé** (tous les 2-3 jours) plutôt que quotidien et superficiel
-- Le paillage reste votre meilleure économie d'eau — maintenant 60 à 70 % d'évaporation en moins
-
-### Préparer les emplacements d'automne
-
-Dès qu'une culture est terminée, ne laissez pas le sol nu :
-1. Arrachez les plants épuisés
-2. Amendez avec du compost (2-3 kg/m²)
-3. Semez un engrais vert ou préparez l'emplacement pour les légumes d'automne
-
-### Récolter les semences
-
-Août est le mois idéal pour récolter vos propres graines :
-- **Tomates** — laissez mûrir complètement 2-3 beaux fruits, extrayez les graines et faites-les fermenter 48h avant séchage
-- **Courges et courgettes** — laissez un fruit sur pied jusqu'à ce que sa peau soit dure et sa couleur terne
-- **Haricots** — laissez sécher les gousses directement sur le pied
-- **Basilic** — laissez monter en fleurs puis en graines quelques tiges
-
-### Surveiller les maladies de fin d'été
-
-- **Mildiou** sur tomates et pommes de terre : après les orages d'août, inspectez le feuillage. Supprimez les feuilles atteintes, traitez à la bouillie bordelaise si nécessaire
-- **Oïdium** sur courgettes et courges : feuilles recouvertes d'un duvet blanc. Aérez, supprimez les feuilles les plus atteintes, traitez au bicarbonate de soude dilué
-- **Pourriture grise (botrytis)** : favorisée par l'humidité nocturne. Supprimez les parties atteintes
+- 🥕 **Carottes** — pleine saison, récoltez au fur et à mesure
+- 🧅 **Oignons et échalotes** — finissez la récolte et stockez dans un endroit frais et sec
+- 🥦 **Brocolis** — première récolte des semis de juillet
+- 🌿 **Herbes aromatiques** — récoltez et faites sécher (thym, romarin, sauge, menthe)
 
 ---
 
-## Tableau récapitulatif d'août
+## Les tâches essentielles de septembre
 
-| Action | Légumes | Période |
+### Préparer le sol pour l'hiver
+
+C'est LE chantier prioritaire de septembre. Dès qu'une culture est terminée :
+
+1. **Arrachez** les plants épuisés (tomates, haricots, courgettes)
+2. **Binez** légèrement la surface pour aérer
+3. **Amendez** avec 3 à 5 kg/m² de compost mûr
+4. **Semez un engrais vert** immédiatement : vesce-seigle, phacélie ou trèfle incarnat. Ces plantes vont protéger le sol pendant l'hiver et l'enrichir en azote
+
+> Ne laissez jamais le sol nu en hiver. Un sol non couvert perd jusqu'à 30 % de sa matière organique sous l'effet du gel, du vent et des pluies. L'engrais vert est la meilleure assurance sol.
+
+### Récolter et stocker les semences
+
+Septembre est le dernier mois pour récupérer vos graines avant les premières gelées :
+
+- **Tomates** — fermenter 48h dans de l'eau, rincer, sécher sur papier
+- **Courges et potirons** — extraire les graines, rincer à l'eau, sécher 3 semaines à l'air avant stockage
+- **Poivrons** — laisser complètement rougir un fruit, extraire les graines et sécher
+- **Haricots et pois** — laisser sécher les gousses sur pied ou à l'abri
+
+Stockez dans des enveloppes kraft étiquetées (nom, variété, date) dans un bocal hermétique avec un sachet de gel de silice.
+
+### Tailler et préparer les vivaces
+
+- **Framboisiers** — taillez les cannes ayant produit cette année (les plus vieilles)
+- **Fraisiers** — supprimez les stolons et vieux feuillages, fertilisez pour préparer la prochaine saison
+- **Artichauts** — coupez les tiges après la récolte, buttez légèrement le pied pour le protéger
+
+### Traitement préventif contre les limaces
+
+Septembre avec ses nuits fraîches et humides est le moment où les limaces reprennent leur activité. Protégez vos semis et jeunes plants :
+- Granulés de ferrate de fer (sans danger pour les animaux et le sol)
+- Cendre de bois en cercle autour des plants
+- Bière dans des pièges enterrés au niveau du sol
+
+---
+
+## Les variétés anciennes à semer en septembre
+
+Septembre est parfait pour redécouvrir des variétés rustiques oubliées :
+
+- **Épinard Géant d'Hiver** — feuilles énormes, très résistant au gel
+- **Mâche Verte de Cambrai** — variété locale du Nord, très productive
+- **Radis Noir Gros d'Hiver** — saveur prononcée, se conserve jusqu'en février
+- **Laitue Rouge de Grenoble** — supporte les gelées légères, couleur spectaculaire
+- **Ail Rose de Lautrec** — IGP du Tarn, goût doux et délicat, à planter maintenant
+
+---
+
+## Tableau récapitulatif de septembre
+
+| Action | Légumes concernés | Période |
 |---|---|---|
-| Semer en pleine terre | Navets, radis, épinards, mâche, roquette | Tout le mois |
-| Semer en pépinière | Laitues d'hiver, mâche | Mi-août |
-| Récolter | Tomates, poivrons, courgettes, maïs, oignons | Tout le mois |
-| Récolter les graines | Tomates, courges, haricots, basilic | Tout le mois |
-| Écimer | Tomates | Fin août |
-| Préparer les emplacements | Sols libérés par les récoltes | Dès que possible |
-
----
-
-## Les variétés anciennes à mettre en avant en août
-
-Août est le mois parfait pour découvrir la richesse des variétés potagères anciennes :
-
-- **Tomate Cœur de Bœuf** — chair dense, peu de graines, saveur exceptionnelle
-- **Tomate Ananas** — bicolore jaune et rouge, très sucrée
-- **Poivron Corno di Toro** — long, doux et charnu, idéal pour la ratatouille
-- **Aubergine Listada de Gandia** — rayée violet et blanc, saveur délicate
-- **Courge Potimarron** — chair sucrée, conservation jusqu'en janvier
-
-Ces variétés sont toutes reproductibles : récoltez leurs graines pour les ressemer l'an prochain !
+| Semer en pleine terre | Mâche, épinards, roquette, radis d'hiver | Tout le mois |
+| Planter | Ail, laitues d'hiver | Mi-septembre |
+| Récolter | Courges, tomates, poivrons, carottes, brocolis | Tout le mois |
+| Récolter les graines | Tomates, courges, poivrons, haricots | Avant les gelées |
+| Préparer le sol | Zones libérées par les cultures d'été | Dès que possible |
+| Semer engrais verts | Toutes zones libérées | Tout le mois |
 
 ---
 
 ## Conseil du mois
 
-> Août est le mois idéal pour **observer et noter**. Prenez le temps de photographier vos récoltes, de noter les variétés qui ont le mieux résisté à la chaleur, les associations qui ont fonctionné. Ces observations sont précieuses pour améliorer votre potager chaque année — c'est la base du jardinage vivant et autonome. 📓🌱
+> Septembre, c'est le moment de **faire le bilan de votre saison**. Notez dans un carnet ce qui a bien fonctionné et ce qui a décéu : les variétés, les associations de plantes, les zones du potager. Ces observations sont votre meilleur outil pour améliorer votre jardin chaque année. Un jardinier attentif vaut mieux que tous les engrais du monde. 🌱📓
