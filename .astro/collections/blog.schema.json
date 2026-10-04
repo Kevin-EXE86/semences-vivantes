@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "titre": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "categorie": {
+      "type": "string",
+      "enum": [
+        "Semences",
+        "Calendrier",
+        "Guides",
+        "Potager bio",
+        "Biodiversité",
+        "Aromatiques",
+        "Conservation"
+      ]
+    },
+    "tempsLecture": {
+      "default": 5,
+      "type": "number"
+    },
+    "image": {
+      "type": "string"
+    },
+    "brouillon": {
+      "default": false,
+      "type": "boolean"
+    },
+    "$schema": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "titre",
+    "description",
+    "date",
+    "categorie"
+  ]
+}

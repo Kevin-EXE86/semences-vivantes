@@ -1,119 +1,142 @@
 ---
-titre: "Calendrier des semis : que faire au potager en septembre ?"
-description: "Septembre marque le début de l'automne au potager. C'est le moment de préparer les cultures d'hiver, récolter les derniers légumes d'été et penser à la protection du sol pour les mois froids."
-date: 2026-09-01
+titre: "Calendrier des semis : que faire au potager en octobre ?"
+description: "Octobre marque l'entrée dans la saison froide. C'est le moment des dernières récoltes, des bulbes à planter et des semis d'hiver. Tout ce qu'il faut faire au potager ce mois-ci."
+date: 2026-10-01
 categorie: Calendrier
 tempsLecture: 7
 ---
 
-Septembre est le mois de la transition par excellence. Les nuits fraîchissent, les journées raccourcissent et le potager change de rythme. On range progressivement les légumes d'été et on installe les cultures qui nourriront la table jusqu'en plein hiver. C'est aussi l'un des mois les plus importants pour préparer le sol pour l'année suivante.
+Octobre est le mois des transitions douces : on referme les chapitres d'été tout en préparant les semences de demain. Le potager ralentit, mais il ne dort pas encore. C'est l'un des moments les plus importants de l'année pour qui pense à long terme.
 
-## Ce que vous pouvez encore semer en septembre
+## Ce que vous pouvez encore semer en octobre
 
-### En pleine terre — les derniers semis de l'année
+### En pleine terre
 
-Septembre offre encore une belle fenêtre de semis pour plusieurs légumes résistants au froid :
+Contre toute attente, octobre permet encore de semer. Les légumes à cycle long qui supportent le froid vont profiter des semaines douces avant de passer l'hiver en dormance :
 
-- **Mâche** — semis tout le mois, c'est le moment idéal. La mâche lève mieux avec des températures fraîches et supporte les gelées jusqu'à -15 °C
-- **Épinards d'hiver** — semis jusqu'à mi-septembre pour une récolte de novembre à mars. Choisissez des variétés rustiques comme le Monstrueux de Viroflay
-- **Roquette** — semis début septembre pour une récolte d'octobre avant les premières gelées
-- **Radis d'hiver** — Radis noir, radis blanc long de Thann — semis jusqu'à mi-septembre
-- **Laitues d'hiver** — variétés rustiques comme la Rouge de Grenoble ou la Merveille d'hiver à repiquer en septembre
-- **Ciboulette** — semis possible jusqu'en septembre pour une récolte printanière
-- **Ail** — plantation des caïeux à partir de mi-septembre, c'est le moment idéal pour l'ail à planter en automne
+- **Ail** — c'est le moment idéal pour planter les caïeux, de mi-octobre à mi-novembre selon les régions
+- **Fèves** — semis possible jusqu'à fin octobre dans le Sud, début octobre dans le Nord ; elles germent lentement et reprendront au printemps
+- **Épinards d'hiver** — variétés résistantes au gel comme 'Monstrueux de Viroflay' ou 'Géant d'hiver'
+- **Mâche** — la dernière fenêtre de semis, pour une récolte tardive ou hivernale sous tunnel
+- **Engrais verts d'hiver** — seigle, vesce velue, mélange d'hiver pour couvrir et protéger les sols nus
 
-### En pépinière et godets
+### Sous abri ou tunnel
 
-- **Pensées et autres fleurs comestibles** pour agrémenter le potager au printemps
-- **Oignons blancs** — semis en godets pour une récolte printanière précoce
+Avec un peu de protection, d'autres cultures restent possibles :
 
----
-
-## Les récoltes de septembre
-
-### Les derniers légumes d'été
-
-Profitez des dernières récoltes avant les premiers froids :
-
-- 🍅 **Tomates** — accélérez la maturation en supprimant les feuilles basses et en réduisant les arrosages. Les fruits verts récoltés avant les gelées mûriront en intérieur
-- 🫑 **Poivrons et aubergines** — dernières récoltes, profitez-en pour faire des conserves
-- 🥒 **Courges et potirons** — récoltez quand le pédoncule commence à se liéger. Laissez-les sécher 2-3 semaines au soleil avant de les stocker
-- 🌽 **Maïs doux** — dernières récoltes
-- 🫘 **Haricots** — si les gousses ont durci, laissez-les sécher pour récupérer les graines
-
-### Les légumes d'automne
-
-- 🥕 **Carottes** — pleine saison, récoltez au fur et à mesure
-- 🧅 **Oignons et échalotes** — finissez la récolte et stockez dans un endroit frais et sec
-- 🥦 **Brocolis** — première récolte des semis de juillet
-- 🌿 **Herbes aromatiques** — récoltez et faites sécher (thym, romarin, sauge, menthe)
+- **Radis d'hiver** — variétés rondes ou longues, très résistantes
+- **Laitues d'hiver** — variétés 'Merveille de quatre saisons', 'Rouge d'hiver'
+- **Cresson** — pousse même par temps frais
 
 ---
 
-## Les tâches essentielles de septembre
+## Les récoltes du mois
 
-### Préparer le sol pour l'hiver
+Octobre est encore généreux si l'été a bien travaillé :
 
-C'est LE chantier prioritaire de septembre. Dès qu'une culture est terminée :
+- 🥕 **Carottes de conservation** — arrachez-les avant les grandes gelées et conservez en caisse de sable
+- 🎃 **Courges et potirons** — la peau doit sonner creux, récoltez avant le gel, coupez en laissant 10 cm de tige
+- 🥦 **Brocolis et choux fleurs** — pleine saison, récoltez régulièrement
+- 🌿 **Poireaux d'automne** — récoltez au fur et à mesure des besoins
+- 🍎 **Pommes et poires tardives** — à stocker en cave après tri
+- 🧅 **Oignons et échalotes** — s'ils n'ont pas encore été rentrés, c'est urgent
 
-1. **Arrachez** les plants épuisés (tomates, haricots, courgettes)
-2. **Binez** légèrement la surface pour aérer
-3. **Amendez** avec 3 à 5 kg/m² de compost mûr
-4. **Semez un engrais vert** immédiatement : vesce-seigle, phacélie ou trèfle incarnat. Ces plantes vont protéger le sol pendant l'hiver et l'enrichir en azote
-
-> Ne laissez jamais le sol nu en hiver. Un sol non couvert perd jusqu'à 30 % de sa matière organique sous l'effet du gel, du vent et des pluies. L'engrais vert est la meilleure assurance sol.
-
-### Récolter et stocker les semences
-
-Septembre est le dernier mois pour récupérer vos graines avant les premières gelées :
-
-- **Tomates** — fermenter 48h dans de l'eau, rincer, sécher sur papier
-- **Courges et potirons** — extraire les graines, rincer à l'eau, sécher 3 semaines à l'air avant stockage
-- **Poivrons** — laisser complètement rougir un fruit, extraire les graines et sécher
-- **Haricots et pois** — laisser sécher les gousses sur pied ou à l'abri
-
-Stockez dans des enveloppes kraft étiquetées (nom, variété, date) dans un bocal hermétique avec un sachet de gel de silice.
-
-### Tailler et préparer les vivaces
-
-- **Framboisiers** — taillez les cannes ayant produit cette année (les plus vieilles)
-- **Fraisiers** — supprimez les stolons et vieux feuillages, fertilisez pour préparer la prochaine saison
-- **Artichauts** — coupez les tiges après la récolte, buttez légèrement le pied pour le protéger
-
-### Traitement préventif contre les limaces
-
-Septembre avec ses nuits fraîches et humides est le moment où les limaces reprennent leur activité. Protégez vos semis et jeunes plants :
-- Granulés de ferrate de fer (sans danger pour les animaux et le sol)
-- Cendre de bois en cercle autour des plants
-- Bière dans des pièges enterrés au niveau du sol
+> **Astuce conservation :** les courges se gardent plusieurs mois dans une pièce sèche et tempérée (10-15 °C), jamais au réfrigérateur. Chaque courge doit être séparée des autres pour qu'une éventuelle pourriture ne contamine pas le lot.
 
 ---
 
-## Les variétés anciennes à semer en septembre
+## Les tâches clés du mois
 
-Septembre est parfait pour redécouvrir des variétés rustiques oubliées :
+### Protéger le sol — priorité absolue
 
-- **Épinard Géant d'Hiver** — feuilles énormes, très résistant au gel
-- **Mâche Verte de Cambrai** — variété locale du Nord, très productive
-- **Radis Noir Gros d'Hiver** — saveur prononcée, se conserve jusqu'en février
-- **Laitue Rouge de Grenoble** — supporte les gelées légères, couleur spectaculaire
-- **Ail Rose de Lautrec** — IGP du Tarn, goût doux et délicat, à planter maintenant
+Un sol nu en hiver est un sol qui souffre : érosion, lessivage des nutriments, destruction de la vie microbienne par le gel. Octobre est le dernier mois pour agir :
+
+- Semez un **engrais vert d'hiver** (seigle, vesce, phacélie selon les températures restantes)
+- Ou couvrez les zones vides avec du **paillage épais** (feuilles mortes, paille, BRF)
+- Étalez le **compost mûr** sur les zones qui ne produiront pas avant le printemps
+
+### Planter les bulbes printaniers
+
+C'est le grand moment des **ails, mais aussi des oignons blancs et des échalotes** à planter pour le printemps. Les planter maintenant leur donne le temps de bien s'enraciner avant les froids.
+
+Pour l'ail :
+1. Choisissez des caïeux sains et fermes (éliminez les mous ou tachés)
+2. Plantez pointe vers le haut, à 5 cm de profondeur
+3. Espacez de 15 cm entre les plants, 30 cm entre les rangs
+4. Paillez légèrement après la plantation pour éviter le déchaussement par le gel
+
+### Composter les feuilles mortes
+
+Les feuilles mortes d'octobre sont une ressource précieuse. Ne les brulez pas ! Voici trois utilisations :
+
+- **Paillage direct** — épandez-les sur les massifs et le potager (10-15 cm)
+- **Terreau de feuilles** — remplissez un grillage cylindrique de feuilles humides, laissez composter 1 à 2 ans : vous obtiendrez un substrat exceptionnel
+- **Activateur de compost** — les feuilles sèches sont une matière "brune" idéale pour équilibrer votre tas de compost
+
+### Entretien des outils
+
+Octobre est le bon moment pour prendre soin du matériel avant l'hiver :
+- Nettoyez, séchez et huilez les lames (huile de lin pour le métal)
+- Remplacez les manches cassés ou fissurés
+- Rangez à l'abri du gel les arrosoirs, tuyaux et pompes
 
 ---
 
-## Tableau récapitulatif de septembre
+## Protéger du froid : les techniques
+
+Les premières gelées peuvent survenir en octobre dans certaines régions. Préparez-vous :
+
+### Voile de forçage (P17, P30)
+Léger, il protège jusqu'à -2°C. Idéal pour prolonger les salades et les jeunes plants de quelques semaines.
+
+### Tunnels et cloches
+Les mini-tunnels permettent de décaler les récoltes d'épinards et de mâche bien dans l'hiver. Ventilez par beau temps pour éviter les maladies cryptogamiques.
+
+### Buttage
+Buttez les pieds de choux, d'artichauts et de cardons pour les protéger des gelées. Un paillage épais au pied des rosiers et des vivaces fragiles est aussi recommandé.
+
+---
+
+## Le focus variétés : les ails anciens
+
+Octobre, c'est le mois de l'ail par excellence. Mais quel ail planter ? Les variétés anciennes présentent une diversité gustative extraordinaire — et contrairement aux hybrides du commerce, leurs caïeux se replantent indéfiniment.
+
+### Cinq ails anciens à découvrir
+
+**Ail rose de Lautrec** *(ail blanc, Hautes-Pyrénées)*
+La star des ails français, Label Rouge depuis 1996. Saveur douce et persistante, excellente conservation (jusqu'à 10 mois). Plant robuste, idéal pour débuter avec les ails anciens.
+
+**Ail violet de Cadours** *(ail violet, Haute-Garonne)*
+Caractère plus prononcé, robe violette élégante. Maturité légèrement plus précoce que le Lautrec. Résiste bien à la sécheresse d'été.
+
+**Ail blanc de la Lomagne** *(ail blanc, Tarn-et-Garonne)*
+L'un des plus productifs parmi les ails anciens. Bulbes généreux, longue conservation. Facile à cultiver, recommandé pour les jardiniers qui commencent.
+
+**Ail de la Drôme** *(ail blanc, Drôme)*
+Goût fin et délicat, idéal pour cuisiner. S'adapte bien aux sols argileux du couloir rhodanien. Bonne tolérance au froid.
+
+**Ail noir fumé** *(fermenté, toutes régions)*
+Techniquement pas un cultivar mais une préparation : l'ail fermenté développe une saveur douce, presque sucrée, très appréciée en cuisine gastronomique. Se fait à partir de n'importe quel ail ancien.
+
+> 💡 **Conseil :** commandez vos semences d'ail bio ou vos caïeux auprès de maisons de semences spécialisées dès septembre — les stocks partent vite. Vous pouvez aussi replanter les caïeux de votre récolte précédente, en sélectionnant les plus beaux bulbes.
+
+---
+
+## Tableau récapitulatif d'octobre
 
 | Action | Légumes concernés | Période |
 |---|---|---|
-| Semer en pleine terre | Mâche, épinards, roquette, radis d'hiver | Tout le mois |
-| Planter | Ail, laitues d'hiver | Mi-septembre |
-| Récolter | Courges, tomates, poivrons, carottes, brocolis | Tout le mois |
-| Récolter les graines | Tomates, courges, poivrons, haricots | Avant les gelées |
-| Préparer le sol | Zones libérées par les cultures d'été | Dès que possible |
-| Semer engrais verts | Toutes zones libérées | Tout le mois |
+| Planter | Ail, fèves, oignons blancs, échalotes | Tout le mois |
+| Semer sous abri | Épinards, mâche, radis d'hiver | Début octobre |
+| Semer engrais verts | Seigle, vesce velue | Avant mi-octobre |
+| Récolter | Courges, carottes, poireaux, choux | Tout le mois |
+| Composter | Feuilles mortes, résidus de cultures | Tout le mois |
+| Protéger | Sols nus, plants fragiles | Dès les premières gelées |
 
 ---
 
 ## Conseil du mois
 
-> Septembre, c'est le moment de **faire le bilan de votre saison**. Notez dans un carnet ce qui a bien fonctionné et ce qui a décéu : les variétés, les associations de plantes, les zones du potager. Ces observations sont votre meilleur outil pour améliorer votre jardin chaque année. Un jardinier attentif vaut mieux que tous les engrais du monde. 🌱📓
+> C'est le moment de passer commande pour le printemps ! Les catalogues de semenciers ouvrent leurs commandes en automne, et les variétés les plus rares partent très vite. Préparez votre liste de semences dès maintenant : tomates anciennes, courges rares, haricots grimpants de collection... Anticiper, c'est jardiner librement.
+
+Bon jardinage automnal ! 🍂🌱
