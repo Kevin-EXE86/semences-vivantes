@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://semences-vivantes.fr/sitemap-index.xml
