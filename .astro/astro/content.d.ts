@@ -141,9 +141,30 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"blog": {
-"calendrier-semis-mai.md": {
-	id: "calendrier-semis-mai.md";
-  slug: "calendrier-semis-mai";
+"article-1-pollution-sols-regions.md": {
+	id: "article-1-pollution-sols-regions.md";
+  slug: "article-1-pollution-sols-regions";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"article-2-regenerer-sol-agroecologie.md": {
+	id: "article-2-regenerer-sol-agroecologie.md";
+  slug: "article-2-regenerer-sol-agroecologie";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"calendrier-semis-juillet.md": {
+	id: "calendrier-semis-juillet.md";
+  slug: "calendrier-semis-juillet";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"canicule-juin-2026-potager.md": {
+	id: "canicule-juin-2026-potager.md";
+  slug: "canicule-juin-2026-potager";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">

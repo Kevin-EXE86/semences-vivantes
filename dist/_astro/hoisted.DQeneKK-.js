@@ -1,0 +1,1 @@
+import"https://www.google.com/recaptcha/api.js?hl=fr";const n=document.getElementById("menuToggle"),t=document.getElementById("navMobile");n?.addEventListener("click",()=>{t?.classList.toggle("ouvert");const e=t?.classList.contains("ouvert");t?.setAttribute("aria-hidden",String(!e))});
